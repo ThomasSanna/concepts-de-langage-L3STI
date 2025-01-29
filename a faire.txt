@@ -1,0 +1,7 @@
+Faire la carte d'identité d'un langage qu'on aimerait apprendre (Rust) (voir diapo)
+
+Lire l'article 10 thing en surlignant 2 passages
+
+Binome : 
+Liste de bonne pratique qu'on S'ENGAGE à suivre pour coder en C (specification d'algo (avec @imputs, @preconditions, @postconditions), commentaires, indentation, nommage des variables, etc)
+Proposer une cheat sheet C 
