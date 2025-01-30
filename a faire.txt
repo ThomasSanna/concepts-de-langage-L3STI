@@ -1,4 +1,3 @@
-Faire la carte d'identité d'un langage qu'on aimerait apprendre (Rust) (voir diapo)
 
 Lire l'article 10 thing en surlignant 2 passages
 
