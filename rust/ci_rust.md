@@ -1,57 +1,79 @@
-Nom du langage : Rust
+# Nom du langage : Rust
 
 Créateur : Graydon Hoare
 
 Première apparition : 2010
 
-Paradigmes : 
+## Paradigmes :
+
 - Impératif (pas purement impératif)
 - Fonctionnel
 
-Typage : 
+## Typage :
+
 - Statique
 - Fort
 - Inféré
 
-Différents types :
+## Peut-on créer de nouveau type ? :
+
+- Oui
+
+```rust
+struct Point {
+    x: f64,
+    y: f64,
+}
+```
+
+## Différents types :
+
 - i32, i64, u32, u64, f32, f64 (= int32bits, int64bits, unsigned int32bits, unsigned int64bits, float32bits, float64bits)
 - bool
 - char
 
-Gestion de la mémoire : 
+## Gestion de la mémoire : 
+
 - Pas de garbage collector
 - Propriété et emprunt (ownership and borrowing)
 - Allocation manuelle et automatique
 
-Sécurité : 
+## Sécurité : 
 - Sécurité mémoire garantie par le compilateur
 - Vérification des emprunts à la compilation
 - Absence de data races
 
-Interopérabilité : 
+## Interopérabilité : 
+
 - Interopérabilité avec C et C++
 - FFI (Foreign Function Interface)
 
-Utilisations courantes : 
+## Utilisations courantes : 
+
 - Développement système
 - Applications embarquées
 - WebAssembly
 - Services web
 - Jeux vidéo
 
-Niveau d'abstraction :
+## Niveau d'abstraction :
+
 - Élevé
 
-Popularité :
+## Popularité :
+
 - En forte croissance
 
-Mutabilité :
+## Mutabilité :
+
 - Rust est un langage immuable par défaut
 - Mutabilité explicite
 
-Syntaxe :
+## Syntaxe :
 
+```rust
 ---------------------------------------- Print "Hello, world!"
+
 fn main() {
     println!("Hello, world!");
 }
@@ -181,3 +203,17 @@ fn main() {
 
     println!("{}", x); // Ok car i32 est copié
 }
+---------------------------------------- Booleens
+fn main() {
+    let a = true;
+    let b = false;
+
+    if a && b {
+        println!("a et b sont vrais");
+    } else if a || b {
+        println!("a ou b est vrai");
+    } else {
+        println!("a et b sont faux");
+    }
+}
+```

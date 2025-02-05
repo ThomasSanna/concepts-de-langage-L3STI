@@ -13,6 +13,18 @@ Pointeur : variable contenant l'adresse d'une autre variable
     *monPointeur : valeur de la variable pointée
     &monPointeur : adresse du pointeur
 
+printf % list :
+%d : int
+%f : float
+%c : char
+%s : string
+%p : pointer
+%x : hexadecimal
+%o : octal
+%u : unsigned int
+%ld : long int
+%lu : unsigned long int
+
 */
 
 // Fonction pour échanger les valeurs de deux entiers en utilisant des pointeurs
@@ -57,8 +69,6 @@ int main() {
 
 /*
 Pour compiler et exécuter ce code:
-1. Ouvrez un terminal.
-2. Naviguez jusqu'au répertoire contenant le fichier truc.c.
-3. Compilez le code avec la commande: gcc -o truc truc.c
-4. Exécutez le programme avec la commande: ./truc (ou truc.exe sous Windows)
+1. gcc -o truc truc.c
+2. ./truc (ou truc.exe sous Windows)
 */

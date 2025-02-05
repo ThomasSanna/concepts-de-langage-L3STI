@@ -97,6 +97,9 @@
 ### Comment parler des variables?
 
 - **Portée** : La portée d'une variable est la partie du programme où la variable est accessible, ou il est possible d'y faire référence
+  - **Portée globale** : La portée globale d'une variable est l'ensemble du programme.
+  - **Portée locale** : La portée locale d'une variable est limitée à la fonction où elle est déclarée.
+  - **Portée statique** : La portée statique d'une variable est limitée à la fonction où elle est déclarée, mais sa valeur est conservée entre les appels de la fonction.
 - **Durée de vie** : La durée de vie d'une variable est la période pendant laquelle la variable existe en mémoire.
 
 ### Nature d'une variable en C ?
@@ -105,3 +108,72 @@
 - **Variable locale** : Une variable locale est déclarée à l'intérieur d'une fonction. Elle n'est accessible que dans la fonction où elle est déclarée.
 - **Variable locale statique** : Une variable locale statique est déclarée à l'intérieur d'une fonction avec le mot-clé static. Elle conserve sa valeur entre les appels de la fonction. Sa durée de vie dépasse la durée de vie de la fonction.
   *ex : void f() { static int x = 0; x++; printf("Nombre de fois où on a utiliser la fonction : %d", x); }*
+
+## Transparence référentielle
+
+- **Definition** : La transparence référentielle est une propriété des fonctions qui garantit que le résultat de la fonction ne dépend que de ses arguments et qu'elle n'a pas d'effets de bord.
+- **Exemple** :
+
+```c
+int i = 0;
+int f(int x) {
+  return x + i;
+}
+
+print(f(1) + f(1)); // 1 + 2 = 3. f(1) != f(1) => pas de transparence référentielle.
+```
+
+## Effets de bord
+
+- **Definition** : Un effet de bord est une modification de l'état du programme qui n'est pas reflétée dans le résultat de la fonction.
+- **Exemple** : f(x) = x + 1 a un effet de bord si x est modifié dans la fonction.
+
+## Paramètres de fonction
+
+- **Paramètre formel** : Le paramètre formel est le nom donné à un paramètre dans la déclaration de la fonction.
+- **Paramètre effectif** : Le paramètre effectif est la valeur passée à un paramètre lors de l'appel de la fonction.
+- **Exemple** :
+
+```c
+int f(int x) { // => x est le paramètre formel.
+  return x + 1;
+}
+val=4;
+a = f(val) // => val est le paramètre effectif.
+b = f(5) // => 5 est le paramètre effectif.
+```
+
+## Expression et Commande
+
+- **Expression** : Une expression est une combinaison de valeurs, de variables et d'opérateurs qui peut être évaluée pour produire une valeur.
+- **Exemple** : 1 + 2, x * y, f(3).
+- **Commande** : Une commande est une instruction qui effectue une action mais ne produit pas de valeur.
+- ²**Exemple** : x = 1, print("Hello, World!").
+
+## difference entre #define et const
+
+- **#define** : #define est une directive du préprocesseur qui remplace le texte par un autre texte avant la compilation. Il n'y a pas de vérification de type.
+- **Exemple** :
+
+```c
+#define PI 3.14159
+
+int main() {
+  double r = 5.0;
+  double area = PI * r * r; // PI, avant la compilation, est remplacé par 3.14159.
+  return 0;
+}
+```
+
+- **const** : const est un mot-clé qui définit une constante en C. La valeur de la constante ne peut pas être modifiée.
+- **Exemple** :
+
+```c
+const double PI = 3.14159;
+
+int main() {
+  double r = 5.0;
+  double area = PI * r * r; // La valeur de PI ne peut pas être modifiée, et ne sera pas remplacée par le préprocesseur.
+  return 0;
+}
+```

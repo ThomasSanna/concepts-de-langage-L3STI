@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/thoma/Desktop/programmes/L3STI/Semestre 2/concepts-de-langage-L3STI/c/TD1",
+      "program": "c:/Users/thoma/Desktop/programmes/L3STI/Semestre 2/concepts-de-langage-L3STI/c/TD1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
