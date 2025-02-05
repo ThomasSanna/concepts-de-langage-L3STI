@@ -12,35 +12,3 @@ Bonnes Pratiques de codage en C
 10. Nom des variables et fonctions en anglais
 11. Nom des variables et fonctions en camelCase
 12. Utilisation de types de données appropriés (pas de int pour stocker un booléen) 
-
-(
-  Convention de nommage en C
-
-  Préfixes et Suffixes
-
-  Préfixes
-  --------
-  - g_ : pour les variables globales
-  - s_ : pour les variables statiques
-  - p_ : pour les paramètres de fonctions
-  - c_ : pour les constantes
-  - i_ : pour les variables locales
-  - m_ : pour les membres de structures
-  - e_ : pour les énumérations
-
-  Suffixes
-  --------
-  - _t : pour les types de données
-  - _p : pour les pointeurs
-  - _f : pour les fonctions
-  - _s : pour les structures
-
-  Exemples
-  --------
-  - g_iValue : variable globale
-  - s_bonjour : variable statique
-  - p_laValeur : paramètre de fonction
-  - c_iValue : constante
-  ...
-
-)
