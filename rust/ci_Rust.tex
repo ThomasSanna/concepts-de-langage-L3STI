@@ -5,6 +5,17 @@
 \usepackage{listings}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{biblatex}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Carte d'Identité de Rust}
+\fancyhead[R]{SANNA Thomas, L3STI}
+\fancyfoot[C]{Page n°\thepage}
+
+\addbibresource{ref.bib}
+
 
 \title{CI de Rust}
 \author{SANNA Thomas, L3STI}
@@ -50,14 +61,14 @@ Graydon Hoare
     \item Fonctionnel
 \end{itemize}
 
-\section{Typage}
+\section{Typage \cite{noauthor_data_nodate}}
 \begin{itemize}
     \item Statique
     \item Fort
     \item Inféré
 \end{itemize}
 
-\section{Peut-on créer de nouveau type ?}
+\section{Peut-on créer de nouveau type ? \cite{noauthor_data_nodate}}
 Oui
 \begin{lstlisting}[]
 struct Point {
@@ -66,14 +77,14 @@ struct Point {
 }
 \end{lstlisting}
 
-\section{Différents types}
+\section{Différents types \cite{noauthor_data_nodate}}
 \begin{itemize}
     \item i32, i64, u32, u64, f32, f64 (= int32bits, int64bits, unsigned int32bits, unsigned int64bits, float32bits, float64bits)
     \item bool
     \item char
 \end{itemize}
 
-\section{Gestion de la mémoire}
+\section{Gestion de la mémoire \cite{noauthor_what_nodate}} 
 \begin{itemize}
     \item Pas de garbage collector
     \item Propriété et emprunt (ownership and borrowing)
@@ -83,7 +94,7 @@ struct Point {
 \section{Sécurité}
 \begin{itemize}
     \item Sécurité mémoire garantie par le compilateur
-    \item Vérification des emprunts à la compilation
+    \item Vérification des emprunts a la compilation
     \item Absence de data races
 \end{itemize}
 
@@ -105,16 +116,16 @@ struct Point {
 \section{Niveau d'abstraction}
 Élevé
 
-\section{Popularité}
+\section{Popularité \cite{noauthor_introduction_nodate}}
 En forte croissance
 
-\section{Mutabilité}
+\section{Mutabilité \cite{noauthor_variables_nodate}}
 \begin{itemize}
     \item Rust est un langage immuable par défaut
-    \item Mutabilité explicite
+    \item Mutabilité explicite avec le mot-clé \textbf{mut}
 \end{itemize}
 
-\section{Syntaxe}
+\section{Syntaxe \cite{noauthor_introduction_nodate}}
 \subsection{Print "Hello, world!"}
 \begin{lstlisting}[]
 fn main() {
@@ -172,8 +183,8 @@ fn move_player(d: Direction) {
     match d {
         Direction::Up => println!("Le joueur monte"),
         Direction::Down => println!("Le joueur descend"),
-        Direction::Left => println!("Le joueur va à gauche"),
-        Direction::Right => println!("Le joueur va à droite"),
+        Direction::Left => println!("Le joueur va a gauche"),
+        Direction::Right => println!("Le joueur va a droite"),
     }
 }
 
@@ -217,7 +228,7 @@ fn main() {
 \begin{lstlisting}[]
 fn division(a: f64, b: f64) -> Result<f64, String> {
     if b == 0.0 {
-        Err("Division par zéro".to_string())
+        Err("Division par zero".to_string())
     } else {
         Ok(a / b)
     }
@@ -225,7 +236,7 @@ fn division(a: f64, b: f64) -> Result<f64, String> {
 
 fn main() {
     match division(9.0, 3.0) {
-        Ok(result) => println!("Résultat : {}", result),
+        Ok(result) => println!("Resultat : {}", result),
         Err(err) => println!("Erreur : {}", err),
     }
 }
@@ -248,20 +259,20 @@ fn main() {
     let number = 42;
 
     match number {
-        0 => println!("Zéro"),
+        0 => println!("Zero"),
         1..=100 => println!("Entre 1 et 100"),
         _ => println!("Autre"),
     }
 }
 \end{lstlisting}
 
-\subsection{Gestion de la mémoire}
+\subsection{Gestion de la mémoire \cite{noauthor_what_nodate}}
 \begin{lstlisting}[]
 fn main() {
     let s1 = String::from("hello");
     let s2 = s1;
 
-    println!("{}", s1); // Erreur : s1 a été déplacé
+    println!("{}", s1); // Erreur : s1 a ete deplace
 }
 
 // avec type simple :
@@ -269,7 +280,7 @@ fn main() {
     let x = 5;
     let y = x;
 
-    println!("{}", x); // Ok car i32 est copié
+    println!("{}", x); // Ok car i32 est copie
 }
 \end{lstlisting}
 
@@ -288,5 +299,9 @@ fn main() {
     }
 }
 \end{lstlisting}
+
+
+
+\break\printbibliography
 
 \end{document}

@@ -1,0 +1,101 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{noauthor_data_nodate}{misc}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{title}{Data {Types} - {The} {Rust} {Programming} {Language}}
+      \field{urlday}{5}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Data Types - The Rust Programming Language:C\:\\Users\\thoma\\Zotero\\storage\\NLE59FIZ\\ch03-02-data-types.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doc.rust-lang.org/book/ch03-02-data-types.html
+      \endverb
+      \verb{url}
+      \verb https://doc.rust-lang.org/book/ch03-02-data-types.html
+      \endverb
+    \endentry
+    \entry{noauthor_introduction_nodate}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction - {Rust} {By} {Example}}
+      \field{urlday}{9}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Introduction - Rust By Example:C\:\\Users\\thoma\\Zotero\\storage\\WLXMZA5R\\rust-by-example.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doc.rust-lang.org/rust-by-example/
+      \endverb
+      \verb{url}
+      \verb https://doc.rust-lang.org/rust-by-example/
+      \endverb
+    \endentry
+    \entry{noauthor_variables_nodate}{misc}{}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labeltitlesource}{title}
+      \field{title}{Variables and {Mutability} - {The} {Rust} {Programming} {Language}}
+      \field{urlday}{5}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Variables and Mutability - The Rust Programming Language:C\:\\Users\\thoma\\Zotero\\storage\\XWW7BD5F\\ch03-01-variables-and-mutability.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html
+      \endverb
+      \verb{url}
+      \verb https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html
+      \endverb
+    \endentry
+    \entry{noauthor_what_nodate}{misc}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{What is {Ownership}? - {The} {Rust} {Programming} {Language}}
+      \field{urlday}{5}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb What is Ownership? - The Rust Programming Language:C\:\\Users\\thoma\\Zotero\\storage\\3AN74PW2\\ch04-01-what-is-ownership.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
+      \endverb
+      \verb{url}
+      \verb https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
