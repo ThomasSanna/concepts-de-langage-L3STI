@@ -14,7 +14,7 @@ int isInt(const char *str) {
 
 int main(int argc, char* argv[]) {
   if (argc < 2) {
-    printf("Mauvais usage : au moins deux paramètres attendus:\n./exoA1.exe param1 param2\n");
+    printf("Wrong usage, at least 2 parameters expected:\n");
     return 1;
   }
 

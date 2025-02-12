@@ -152,7 +152,7 @@ b = f(5) // => 5 est le paramètre effectif.
 
 ## difference entre #define et const
 
-- **#define** : #define est une directive du préprocesseur qui remplace le texte par un autre texte avant la compilation. Il n'y a pas de vérification de type.
+- **#define** : #define est une directive du **préprocesseur** qui ***remplace le texte par un autre texte avant la compilation***. Il n'y a pas de vérification de type.
 - **Exemple** :
 
 ```c
@@ -161,6 +161,19 @@ b = f(5) // => 5 est le paramètre effectif.
 int main() {
   double r = 5.0;
   double area = PI * r * r; // PI, avant la compilation, est remplacé par 3.14159.
+  return 0;
+}
+```
+
+- **macro** : #define est utilisé pour définir des macros en C. Une macro est un bloc de code qui est remplacé par un autre bloc de code avant la compilation.
+- **Exemple** :
+
+```c
+#define SQUARE(x) ((x) * (x))
+
+int main() {
+  int a = 5;
+  int b = SQUARE(a); // SQUARE(a) est une macro. Elle sera remplacée par ((a) * (a)) avant la compilation.
   return 0;
 }
 ```
@@ -177,3 +190,18 @@ int main() {
   return 0;
 }
 ```
+
+## Pointeur Tableau (int)
+
+- P[0] = *(P+0) = *P
+- P[1] = *(P+1). 1 signifie en fait la taille de l'élément du tableau. (int = 4 octets)
+- P[2] = *(P+2)
+- ...
+
+## Erreurs possibles : 
+
+- **Segmentation fault** : Erreur qui se produit lorsque le programme tente d'accéder à une zone mémoire qui ne lui est pas autorisée.
+- **Double free** : Erreur qui se produit lorsque le programme tente de libérer une zone mémoire qui a déjà été libérée.
+- **Memory leak** : Erreur qui se produit lorsque le programme alloue de la mémoire mais ne la libère pas, ce qui entraîne une perte de mémoire.
+- **Stack overflow** : Erreur qui se produit lorsque la pile d'exécution du programme dépasse sa capacité maximale.
+- 
