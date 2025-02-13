@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'aux_files/plan.blg'
+[164] biber-MSWIN64:340> INFO - === 
+[211] Biber.pm:419> INFO - Reading 'aux_files/plan.bcf'
+[353] Biber.pm:979> INFO - Found 7 citekeys in bib section 0
+[370] Biber.pm:4419> INFO - Processing section 0
+[385] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
+[435] bibtex.pm:1713> INFO - LaTeX decoding ...
+[448] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[516] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[516] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[516] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'fr-FR'
+[516] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
+[523] bbl.pm:660> INFO - Writing 'aux_files/plan.bbl' with encoding 'UTF-8'
+[526] bbl.pm:763> INFO - Output to aux_files/plan.bbl

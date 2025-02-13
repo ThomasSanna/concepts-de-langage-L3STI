@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[style=authoryear]{biblatex}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhead[L]{Plan du séminaire : L'algorithme quantique}
+\fancyhead[R]{RAETH et SANNA, L3STI}
+\fancyfoot[C]{Page n°\thepage}
+
+\addbibresource{ref.bib}
+
+\title{Plan du séminaire :\\L'algorithme quantique}
+\author{RAETH Léandre, SANNA Thomas\\L3 Sciences et Technologie  P. Informatique}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\subsection{Présentation du sujet}
+\begin{itemize}
+    \item L'informatique quantique est bien plus qu'un simple ordinateur "sous stéroïde" (\cite{V2F_2024}).
+    \item Objectif du séminaire : comprendre pourquoi et comment les algorithmes quantiques surpassent les algorithmes classiques.
+\end{itemize}
+\subsection{Exemple introductif}
+\begin{itemize}
+    \item Recherche d'un élément dans une liste classique (\(\epsilon(n)\) en informatique classique vs. \(\epsilon(\sqrt{n})\) en quantique avec Grover).
+\end{itemize}
+
+\section{Informatique classique vs. Informatique quantique}
+\subsection{Bits classiques}
+\begin{itemize}
+    \item Représentation en 0 et 1 via des transistors et du courant électrique.
+    \item Opérations logiques via des portes (AND, OR, NOT...).
+\end{itemize}
+\subsection{Qubits quantiques}
+\begin{itemize}
+    \item Différents supports physiques (ions, supraconducteurs, spin d'électrons).
+    \item Principales différences : Superposition, Intrication, Interférence.
+\end{itemize}
+
+\section{Propriétés fondamentales de l'informatique quantique}
+\subsection{Superposition}
+\begin{itemize}
+    \item Un qubit peut être simultanément en état 0 et 1.
+    \item Notation mathématique : \(|\psi\rangle = \alpha|0\rangle + \beta|1\rangle\). (\cite{youtubeYouTube})
+\end{itemize}
+\subsection{Intrication}
+\begin{itemize}
+    \item Deux qubits intriqués partagent un lien instantané, peu importe la distance.
+\end{itemize}
+\subsection{Interférence}
+\begin{itemize}
+    \item Permet de manipuler les probabilités des états mesurés. (\cite{dami})
+\end{itemize}
+\section{L'algorithme de Grover}
+\subsection{Problématique}
+\begin{itemize}
+    \item Recherche d'un élément dans une liste non triée.
+\end{itemize}
+\subsection{Comparaison des algorithmes}
+\begin{itemize}
+    \item Algorithme classique : \(n\) étapes dans le pire des cas.
+    \item Algorithme quantique : \(\sqrt{n}\) étapes grâce à Grover. (\cite{wikipediaAlgorithmeGrover})
+\end{itemize}
+\subsection{Fonctionnement en deux étapes}
+\begin{enumerate}
+    \item \textbf{Oracle} : Marquage de l'élément recherché.
+    \item \textbf{Diffusion} : Amplification de la probabilité de la bonne réponse. (\cite{V2F_2024})
+\end{enumerate}
+\begin{itemize}
+    \item Reprise de la boucle \(\sqrt{n}\) fois pour obtenir une probabilité optimale.
+\end{itemize}
+
+\section{Expérimentation : coder un algorithme quantique}
+\subsection{Exécution d'un programme quantique}
+\begin{itemize}
+    \item Utilisation d’un simulateur ou d’un véritable ordinateur quantique via IBM Q Experience ou Microsoft Azure Quantum. (\cite{microsoftAzureQuantum}) (\cite{mediumGettingStarted})
+\end{itemize}
+\subsection{Exemple de code en Qiskit}
+\begin{itemize}
+    \item Exemple de code simple en Qiskit : exécution d'un circuit de Grover.
+\end{itemize}
+
+\section{Limites et perspectives}
+\subsection{Défis actuels}
+\begin{itemize}
+    \item Fragilité des qubits (décohérence, erreurs de mesure).
+    \item Nombre limité de qubits utilisables aujourd'hui. (\cite{V2F_2024})
+\end{itemize}
+\subsection{Futur de l'informatique quantique}
+\begin{itemize}
+    \item Augmentation du nombre de qubits et correction d'erreurs. (\cite{uopeopleWhatQuantum})
+    \item Applications potentielles (cryptographie, optimisation, intelligence artificielle).
+\end{itemize}
+
+\section{Conclusion et Q\&A}
+\subsection{Récapitulatif des points clés}
+\begin{itemize}
+    \item Importance de l'informatique quantique dans l'avenir. (\cite{dami})
+\end{itemize}
+\subsection{Session de questions-réponses}
+\begin{itemize}
+    \item Session de questions-réponses avec le public.
+\end{itemize}
+
+\break\printbibliography
+
+\end{document}
