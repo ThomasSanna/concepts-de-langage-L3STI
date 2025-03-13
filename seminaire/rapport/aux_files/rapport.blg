@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'aux_files/rapport.blg'
-[133] biber-MSWIN64:340> INFO - === 
-[174] Biber.pm:419> INFO - Reading 'aux_files/rapport.bcf'
-[314] Biber.pm:979> INFO - Found 2 citekeys in bib section 0
-[331] Biber.pm:4419> INFO - Processing section 0
-[346] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
-[412] bibtex.pm:1713> INFO - LaTeX decoding ...
-[428] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
-[481] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[481] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[481] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'fr-FR'
-[481] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
-[484] bbl.pm:660> INFO - Writing 'aux_files/rapport.bbl' with encoding 'UTF-8'
-[485] bbl.pm:763> INFO - Output to aux_files/rapport.bbl
+[1] Config.pm:310> INFO - Logfile is 'aux_files/rapport.blg'
+[226] biber-MSWIN64:340> INFO - === 
+[300] Biber.pm:419> INFO - Reading 'aux_files/rapport.bcf'
+[481] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
+[502] Biber.pm:4419> INFO - Processing section 0
+[521] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
+[606] bibtex.pm:1713> INFO - LaTeX decoding ...
+[629] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[716] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[717] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[717] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'fr-FR'
+[717] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
+[724] bbl.pm:660> INFO - Writing 'aux_files/rapport.bbl' with encoding 'UTF-8'
+[727] bbl.pm:763> INFO - Output to aux_files/rapport.bbl

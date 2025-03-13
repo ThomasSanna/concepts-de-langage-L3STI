@@ -9,6 +9,33 @@
 \usepackage[style=authoryear]{biblatex}
 \usepackage{fancyhdr}
 \usepackage{braket}
+\usepackage{float}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
 \pagestyle{fancy}
 
 \fancyhf{}
@@ -75,7 +102,7 @@ de l'algorithme de génération de nombres aléatoires en informatique quantique
 
 \subsection{Comparaison des méthodes}
 
-\begin{table}[h]
+\begin{table}[H]
   \centering
   \begin{tabular}{|c|c|}
     \hline
@@ -109,6 +136,121 @@ utiliser le langage de programmation Qiskit.
 En effet, Qiskit est un framework open-source développé par IBM en 2017 pour la programmation
 d'algorithme quantique en Python \cite{wikipediaQiskitWikipedia}. Qiskit permettra d'utiliser cette fameuse 
 porte Hadamard pour préparer un qubit dans un état de superposition.
+
+\subsubsection{Les schémas de circuits quantiques}
+
+Un circuit quantique est une représentation graphique d'un algorithme quantique. Il est composé
+de qubits, de portes quantiques et de mesures. Les portes quantiques sont des opérations
+unitaires qui agissent sur un ou plusieurs qubits. Les mesures permettent de lire l'état d'un qubit.
+
+\textbf{Porte Hadamard} :
+La porte de Hadamard, on l'a vu plus tôt, est une porte quantique qui permet de mettre un qubit
+dans un état de superposition. Elle est représentée par la lettre H dans un schéma de circuit
+quantique. Elle prend un qubit initialement dans l'état $\ket{0}$ (ou $\ket{1}$, peu importe, cela n'affectera pas la porte) et le transforme, à la sortie, en une superposition
+équilibrée des états $\ket{0}$ et $\ket{1}$.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\textwidth]{img/hadamard.png}
+  \caption{Schéma de circuit quantique pour la porte Hadamard (\cite{wikipediaPorteQuantique})}
+\end{figure}
+
+\textbf{Mesure} :
+La mesure d'un qubit permet de lire son état. Elle est représentée par un symbole de balance dans
+un schéma de circuit quantique. La mesure d'un qubit en superposition donne un résultat aléatoire
+entre 0 et 1, avec une probabilité de 50\% pour chaque état. Elle prend dont un qubit en entrée et
+renvoie un bit classique (0 ou 1) en sortie.
+
+\textit{\textbf{Information :} Les deux lignes horizontales représentent un bit classique, tandis qu'une seule ligne représente un qubit.}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\textwidth]{img/mesure.png}
+  \caption{Schéma de circuit quantique pour la mesure d'un qubit (\cite{wikipediaPorteQuantique})}
+\end{figure}
+
+\textbf{Circuit d'un algorithme de nombre aléatoire} :
+Ce circuit quantique décris l'algorithme de génération de nombres aléatoires en informatique quantique. 
+
+On travaille ici avec qu'un seul qubit \texttt{q} initialisé à l'état $\ket{0}$ ou $\ket{1}$ (conventionnellement, on choisit $\ket{0}$).
+On applique ensuite une porte Hadamard à ce qubit pour le mettre dans un état de superposition. 
+Enfin, on mesure le qubit pour obtenir un résultat aléatoire entre 0 et 1. 
+
+Cette mesure est sortie dans la partie \texttt{c} du circuit (\texttt{c} signifie \textit{classique}).
+Cette partie renvoie un bit classique, qui est le résultat de la mesure du qubit. En effet,
+le \texttt{1} à droite de \texttt{c} signifie le nombre de bits classiques en sortie. Le \texttt{0}
+à côté de la sortie de la mesure, signifie que le bit mesuré est à l'index numéro 0.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{img/portesLogiquesRandom.png}
+  \caption{Portes logiques pour la génération d'un nombre aléatoire entre 0 et 1 (\cite{sapTrueRandomness})}
+\end{figure}
+
+\textbf{Circuit avec 8 qubits} :
+Le problème avec le circuit précédent est qu'il ne génère qu'un seul bit aléatoire, ce qui veut dire que le nombre aléatoire généré est soit 0 soit 1. 
+Pour générer un nombre aléatoire plus grand, il suffit de répéter le processus de préparation et de mesure de qubits en superposition plusieurs fois,
+ou alors d'utiliser plusieurs qubits en superposition en même temps.
+
+Ici, on obtient un circuit quantique pour la génération d'un nombre aléatoire avec 8 qubits.
+En une seule exécution, ce circuit génère un nombre aléatoire entre 0 et 255 (car $2^8 = 256$).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{img/portesLogiquesRandom8.png}
+  \caption{Circuit quantique pour la génération d'un nombre aléatoire avec 8 qubits (\cite{sapTrueRandomness})}
+\end{figure}
+
+\subsection{Code de l'algorithme}
+
+Dans cette partie, il est question de coder l'algorithme de génération de nombres aléatoires avec 8 qubits en informatique quantique en utilisant Qiskit.
+
+\subsubsection{Prérequis}
+Il est étonnament assez simple de coder un algorithme quantique en Python avec Qiskit. En voici les prérequis :
+
+\begin{itemize}
+  \item Installer Python : \texttt{https://www.python.org/downloads/}
+  \item Installer Qiskit : \texttt{pip install qiskit}
+  \item Installer Qiskit Aer : \texttt{pip install qiskit-aer} (\cite{qiskitGettingStarted})
+\end{itemize}
+
+Il est aussi préférable de coder sur Jupyter Notebook, qui permet d'exécuter du code Python en temps réel.
+
+\subsubsection{Initialisation du circuit}
+
+Le circuit quantique est initialisé avec 8 qubits en entrée et 8 bits classiques en sortie. On applique ensuite une porte Hadamard à chaque qubit pour les mettre dans un état de superposition, comme expliqué précédemment.
+On mesure ensuite chaque qubit pour obtenir un résultat aléatoire entre 0 et 1, stocké dans leurs bits classiques respectifs. (Par exemple, le résultat du qubit 0 est stocké dans le bit classique 0, et ainsi de suite.)
+
+\begin{lstlisting}[language=Python, style=mystyle]
+  from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
+  from qiskit_aer import Aer
+  
+  q = QuantumRegister(8, 'q') # initialisation d'un registre quantique de 8 qubits
+  c = ClassicalRegister(8, 'c') # initialisation d'un registre classique de 8 bits
+  circuit = QuantumCircuit(q, c) # initialisation d'un circuit quantique avec les registres q et c
+  
+  circuit.h(q[0]) # porte de Hadamard sur le premier qubit
+  circuit.h(q[1]) # porte de Hadamard sur le deuxieme qubit
+  circuit.h(q[2]) # ...
+  circuit.h(q[3])
+  circuit.h(q[4])
+  circuit.h(q[5])
+  circuit.h(q[6])
+  circuit.h(q[7])
+  
+  circuit.measure(q, c) # mesure de tous les qubits dans les bits classiques correspondants
+\end{lstlisting}
+
+\subsubsection{Exécution du circuit}
+
+
+
+
+
+
+
+
 
 \section{Limites et perspectives}
 \subsection{Défis actuels}
