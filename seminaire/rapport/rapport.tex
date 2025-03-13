@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[style=authoryear]{biblatex}
+\usepackage{fancyhdr}
+\usepackage{braket}
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhead[L]{Rapport de séminaire : L'algorithme quantique}
+\fancyhead[R]{RAETH et SANNA, L3STI}
+\fancyfoot[C]{Page n°\thepage}
+
+\addbibresource{ref.bib}
+
+\title{Rapport de séminaire :\\L'algorithme quantique}
+\author{RAETH Léandre, SANNA Thomas\\L3 Sciences et Technologie  P. Informatique}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\break\section{Introduction}
+\subsection{Présentation du sujet}
+\subsection{Exemple introductif}
+
+\break\section{Informatique classique vs. Informatique quantique}
+\subsection{Bits classiques}
+\subsection{Qubits quantiques}
+
+\break\section{Propriétés fondamentales de l'informatique quantique}
+\subsection{Superposition}
+\subsection{Intrication}
+\subsection{Interférence}
+
+\break\section{Génération de Nombre aléatoire}
+\subsection{Problématique}
+
+Lors de la génération d'un nombre aléatoire en informatique traditionnelle, par exemple, en Python avec le module `random()`, le nombre généré est en réalité dit pseudo-aléatoire car l'algorithme de Mersenne Twister repose sur une graine pour initialiser le générateur de nombres aléatoires. Cette graine permet de prédire le prochain nombre pseudo-aléatoire, ce qui constitue un problème important pour de nombreux projets confidentiels, y compris la cryptographie.
+
+Pour les projets impliquant une confidentialité sévère, comme la cryptographie, l'un des plus grands problèmes avec la génération de nombres pseudo-aléatoires est la capacité à produire des nombres élevés qui sont extrêmement difficiles à prédire. Par exemple, lors de la génération du sel du mot de passe afin de le hacher, un générateur de nombres aléatoires est utilisé. Si ce générateur est prévisible, un hacker compétent trouverait facilement le mot de passe en un rien de temps.
+
+C'est pourquoi il est important de s'assurer que la graine choisie permettra un certain degré d'imprévisibilité.
+
+En revanche, en informatique quantique, 
+la génération de nombres aléatoires peut être véritablement aléatoire grâce aux propriétés 
+quantiques expliquées il y a peu de temps. En effet, en utilisant un ordinateur 
+quantique, on peut mesurer l'état d'un qubit en superposition pour obtenir un résultat aléatoire \b{non-déterministe} !
+
+\subsection{Fonctionnement}
+
+Pour comprendre comment fonctionne la génération de nombres aléatoires en informatique quantique, il faut se pencher sur les propriétés des qubits. Un qubit, comme on l'a vu plus tôt, peut être dans un état de superposition, ce qui signifie qu'il peut représenter simultanément les états 0 et 1. Lorsqu'on mesure un qubit en superposition, le résultat de la mesure est complètement aléatoire entre 0 et 1.
+
+\begin{itemize}
+  \item \textbf{Préparation du qubit} : On commence par préparer un qubit dans un état de superposition. Cela peut être réalisé en appliquant une porte Hadamard (H) à un qubit initialement dans l'état $\ket{0}$. La porte Hadamard transforme l'état $\ket{0}$ en une superposition égale des états $\ket{0}$ et $\ket{1}$ :
+  \[
+  H\ket{0} = \frac{1}{\sqrt{2}}(\ket{0} + \ket{1})
+  \]
+  La porte d'Hadamard est extrêmement utilisée en informatique quantique Ces superpositions ne sont pas des simulations de probabilités, mais des états réels qui peuvent être mesurés.
+  \item \textbf{Mesure du qubit} : Une fois le qubit en superposition, on procède à sa mesure. La mesure d'un qubit en superposition donne un résultat aléatoire, soit 0 soit 1, avec une probabilité de 50\% pour chaque état. Ce processus est intrinsèquement aléatoire et ne peut pas être prédit, même si l'on connaît l'état initial du qubit.
+  \item \textbf{Génération de séquences aléatoires} : En répétant ce processus de préparation et de mesure de qubits en superposition \texttt{n} fois, on peut générer des séquences de bits aléatoires. 
+\end{itemize}
+
+Ainsi, la génération de nombres aléatoires en informatique quantique repose sur les principes
+fondamentaux de la mécanique quantique, offrant une source de véritable aléa, contrairement
+aux méthodes pseudo-aléatoires utilisées en informatique classique. Nous pourrons trouver le code
+de l'algorithme de génération de nombres aléatoires en informatique quantique dans la section suivante.
+
+
+\subsection{Comparaison des méthodes}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Informatique classique} & \textbf{Informatique quantique} \\
+    \hline
+    Pseudo-aléatoire & Non déterministe \\
+    \hline
+    Prédictible & Imprévisible \\
+    \hline
+    Basé sur des algorithmes & Basé sur des propriétés quantiques \\
+    \hline
+    Temps de calcul rapide & Temps de calcul plus lent \\
+    \hline
+  \end{tabular}
+  \caption{Comparaison de la génération de nombres aléatoires en informatique classique et quantique}
+\end{table}
+
+\section{Expérimentation : coder un algorithme quantique}
+
+\subsection{Introduction}
+
+Il existe deux manières de coder un algorithme quantique : en utilisant un simulateur quantique
+ou un véritable ordinateur quantique. Pour coder sur un vrai ordinateur quantique, il est possible
+d'utiliser des services cloud comme IBM Quantum Experience, qui permettent d'accéder à des
+ordinateurs quantiques en ligne. \cite{wikipediaQuantumPlatform}
+
+Cependant, pour des raisons de simplicité, nous allons utiliser un simulateur quantique, qui
+permet de simuler un ordinateur quantique sur un ordinateur classique. Pour cela, nous allons
+utiliser le langage de programmation Qiskit.
+
+En effet, Qiskit est un framework open-source développé par IBM en 2017 pour la programmation
+d'algorithme quantique en Python \cite{wikipediaQiskitWikipedia}. Qiskit permettra d'utiliser cette fameuse 
+porte Hadamard pour préparer un qubit dans un état de superposition.
+
+\section{Limites et perspectives}
+\subsection{Défis actuels}
+\subsection{Futur de l'informatique quantique}
+
+\section{Conclusion et Q\&A}
+\subsection{Récapitulatif des points clés}
+\subsection{Session de questions-réponses}
+
+\break\printbibliography
+
+\end{document}
