@@ -42,6 +42,29 @@
       \field{title}{{G}etting started - {Q}iskit {A}er 0.16.1 --- qiskit.github.io}
       \field{year}{2025}
     \endentry
+    \entry{stackexchangeWhatDifferences}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=acb5527665b36de3c1de423b9f225a85}{%
+           family={EgrettaThula},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{acb5527665b36de3c1de423b9f225a85}
+      \strng{fullhash}{acb5527665b36de3c1de423b9f225a85}
+      \strng{bibnamehash}{acb5527665b36de3c1de423b9f225a85}
+      \strng{authorbibnamehash}{acb5527665b36de3c1de423b9f225a85}
+      \strng{authornamehash}{acb5527665b36de3c1de423b9f225a85}
+      \strng{authorfullhash}{acb5527665b36de3c1de423b9f225a85}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://quantumcomputing.stackexchange.com/questions/24072/what-are-the-differences-between-qiskits-aersimulator-qasmsimulator-and-statev}}
+      \field{note}{[Accedé le 14-03-2025]}
+      \field{title}{{W}hat are the differences between {Q}iskit's {A}er{S}imulator, {Q}asm{S}imulator and {S}tatevector{S}imulator? --- quantumcomputing.stackexchange.com}
+      \field{year}{2022}
+    \endentry
     \entry{wikipediaQuantumPlatform}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=eab8d7935fa17aba7cf7c48481a829a0}{%

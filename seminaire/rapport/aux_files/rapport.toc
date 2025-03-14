@@ -1,0 +1,29 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Présentation du sujet}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Exemple introductif}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Informatique classique vs. Informatique quantique}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Bits classiques}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Qubits quantiques}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Propriétés fondamentales de l'informatique quantique}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Superposition}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Intrication}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Interférence}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Génération de Nombre aléatoire}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Problématique}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Fonctionnement}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Comparaison des méthodes}{7}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Expérimentation : coder un algorithme quantique}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Introduction}{7}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Les schémas de circuits quantiques}{7}{subsubsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.2}Code de l'algorithme}{9}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Prérequis}{10}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Initialisation du circuit}{10}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Exécution du circuit}{10}{subsubsection.5.2.3}%
+\contentsline {section}{\numberline {6}Limites et perspectives}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Défis actuels}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Futur de l'informatique quantique}{12}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Conclusion et Q\&A}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Récapitulatif des points clés}{13}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Session de questions-réponses}{13}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Bibliographie}{14}{section.8}%

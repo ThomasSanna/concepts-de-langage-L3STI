@@ -53,6 +53,8 @@
 
 \maketitle
 
+\tableofcontents
+
 \break\section{Introduction}
 \subsection{Présentation du sujet}
 \subsection{Exemple introductif}
@@ -222,7 +224,7 @@ Il est aussi préférable de coder sur Jupyter Notebook, qui permet d'exécuter 
 Le circuit quantique est initialisé avec 8 qubits en entrée et 8 bits classiques en sortie. On applique ensuite une porte Hadamard à chaque qubit pour les mettre dans un état de superposition, comme expliqué précédemment.
 On mesure ensuite chaque qubit pour obtenir un résultat aléatoire entre 0 et 1, stocké dans leurs bits classiques respectifs. (Par exemple, le résultat du qubit 0 est stocké dans le bit classique 0, et ainsi de suite.)
 
-\begin{lstlisting}[language=Python, style=mystyle]
+\begin{lstlisting}[language=Python, style=mystyle, caption={Initialisation du circuit avec 8 qubits}]
   from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
   from qiskit_aer import Aer
   
@@ -244,22 +246,39 @@ On mesure ensuite chaque qubit pour obtenir un résultat aléatoire entre 0 et 1
 
 \subsubsection{Exécution du circuit}
 
+Pour exécuter le circuit, on utilise un simulateur quantique. Ici, on utilise le simulateur Aer de Qiskit, qui permet de simuler un ordinateur quantique sur un ordinateur classique.
 
+À la fin de l'execution, on obtient en retour un dictionnaire contenant les résultats de la simulation, c'est-à-dire les nombres aléatoires générés.
 
+\begin{lstlisting}[language=Python, style=mystyle, caption={Exécution du circuit}, label={lst:execution_circuit}]
+  simulateur = Aer.get_backend('aer_simulator') # initialisation du simulateur Aer avec le backend aer_simulator
+  circuitCompile = transpile(circuit, simulateur) # compilation du circuit pour le simulateur
+  result = simulateur.run(circuitCompile, shots=1).result() # shot=1 veut dire qu'on execute le circuit une seule fois
+  
+  counts = result.get_counts(circuit)
+  print("\nResultats de la mesure :", counts)  
+\end{lstlisting}
 
+\textit{\textbf{Note additionnelle} : On peut voir dans certains codes sur internet que le simulateur s'appelle \texttt{qasm\_simulator} au lieu de \texttt{aer\_simulator}. En effet, \texttt{qasm\_simulator} est une version nientôt obsolète du simulateur Aer. On conseille aujourd'hui d'utiliser \texttt{aer\_simulator} depuis peu. (\cite{stackexchangeWhatDifferences})}
+\\ \\
+En retour de cette exécution, on obtient un dictionnaire qui comporte le nombre binaire généré :
+\begin{lstlisting}[style=mystyle, caption={Résultat de la mesure : \{'00001010': 1\}}]
+  Resultats de la mesure : {'00001010': 1}
+\end{lstlisting}
+Ce dictionnaire contient le nombre binaire 8 bits généré, avec sa fréquence d'apparition. Il n'y a qu'une seule clé dans ce dictionnaire, qui est le nombre binaire généré, et la valeur associée est le nombre de fois que ce nombre a été généré (une seule fois car le circuit a été exécuté une fois, CF Listing \ref{lst:execution_circuit} \texttt{"shots=1"}).
 
+Ici, le nombre généré est 00001010, qui correspond à 10 en décimal. On peut donc dire que le nombre aléatoire généré est 10.
 
-
-
-
-\section{Limites et perspectives}
+\break\section{Limites et perspectives}
 \subsection{Défis actuels}
 \subsection{Futur de l'informatique quantique}
 
-\section{Conclusion et Q\&A}
+\break\section{Conclusion et Q\&A}
 \subsection{Récapitulatif des points clés}
 \subsection{Session de questions-réponses}
 
-\break\printbibliography
+\break
+\section{Bibliographie}
+\printbibliography
 
 \end{document}
