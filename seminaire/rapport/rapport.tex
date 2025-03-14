@@ -57,7 +57,24 @@
 
 \break\section{Introduction}
 \subsection{Présentation du sujet}
-\subsection{Exemple introductif}
+
+L'informatique quantique est une discipline émergente qui promet de \\révolutionner la manière dont nous traitons l'information. Contrairement à l'informatique classique, qui utilise des bits pour représenter les données sous forme de 0 et de 1, l'informatique quantique utilise des qubits, qui peuvent exister simultanément dans plusieurs états grâce aux principes de superposition et d'intrication quantiques que nous expliquerons plus tard dans ce rapport. Cette capacité unique permet aux ordinateurs quantiques de résoudre certains problèmes, assez spécifiques, beaucoup plus rapidement que les ordinateurs classiques.
+
+L'objectif de ce rapport de séminaire est d'avant tout de vulgariser le sujet sur l'algorithme quantique pour un public non-initié. Nous allons expliquer les concepts fondamentaux de l'informatique quantique, en mettant l'accent sur la génération de nombres aléatoires, qui est un exemple simple, mais très important, d'application de l'informatique quantique. Nous allons également présenter un exemple de code utilisant le framework Qiskit pour générer des nombres aléatoires en informatique quantique.
+
+Ce rapport est structuré comme suit : nous commencerons par une comparaison entre l'informatique classique et quantique, suivie d'une explication des propriétés fondamentales de l'informatique quantique. Ensuite, nous aborderons la génération de nombres aléatoires en informatique quantique et présenterons un exemple de code utilisant le framework Qiskit. Enfin, nous discuterons des défis actuels et des perspectives futures de l'informatique quantique avant de conclure par une session de questions-réponses.
+
+Nous avons choisi ce sujet car l'informatique quantique représente une frontière fascinante de la science et de la technologie, avec le potentiel de transformer de nombreux domaines. On espère que ce rapport vous donnera un aperçu clair et concis de cette technologie encore émergente.
+
+\subsection{Relation entre informatique quantique et physique quantique}
+
+Une petite parenthèse sur la relation entre l'informatique quantique et la physique quantique semble importante pour recontextualiser le sujet.
+
+L'informatique quantique est une discipline interdisciplinaire qui se situe à l'intersection de l'informatique et de la physique quantique. Bien qu'elle ne soit pas un sous-domaine de la physique quantique, elle repose sur les principes fondamentaux de cette dernière pour fonctionner.
+
+En effet, la physique quantique est une branche de la physique qui étudie les phénomènes à l'échelle atomique et subatomique. On y étudie un tout autre monde avec des propriétés uniques par rapport à la physique classique, comme la superposition, l'intrication et l'interférence quantiques. Ces propriétés sont à la base de l'informatique quantique, qui utilise des qubits pour stocker et manipuler l'information.
+
+Ainsi, l'informatique quantique est une application pratique de la physique quantique, qui permet de résoudre des problèmes complexes plus rapidement que les ordinateurs classiques. C'est pourquoi il est important de comprendre les concepts de la physique quantique pour comprendre l'informatique quantique.
 
 \break\section{Informatique classique vs. Informatique quantique}
 \subsection{Bits classiques}
@@ -108,7 +125,7 @@ de l'algorithme de génération de nombres aléatoires en informatique quantique
   \centering
   \begin{tabular}{|c|c|}
     \hline
-    \textbf{Informatique classique} & \textbf{Informatique quantique} \\
+    \textbf{Algorithme classique} & \textbf{Algorithme quantique} \\
     \hline
     Pseudo-aléatoire & Non déterministe \\
     \hline
@@ -119,7 +136,7 @@ de l'algorithme de génération de nombres aléatoires en informatique quantique
     Temps de calcul rapide & Temps de calcul plus lent \\
     \hline
   \end{tabular}
-  \caption{Comparaison de la génération de nombres aléatoires en informatique classique et quantique}
+  \caption{Comparaison de la génération de nombres aléatoires en utilisant un algorithme classique et quantique}
 \end{table}
 
 \section{Expérimentation : coder un algorithme quantique}
@@ -225,7 +242,7 @@ Le circuit quantique est initialisé avec 8 qubits en entrée et 8 bits classiqu
 On mesure ensuite chaque qubit pour obtenir un résultat aléatoire entre 0 et 1, stocké dans leurs bits classiques respectifs. (Par exemple, le résultat du qubit 0 est stocké dans le bit classique 0, et ainsi de suite.)
 
 \begin{lstlisting}[language=Python, style=mystyle, caption={Initialisation du circuit avec 8 qubits}]
-  from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
+  from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit, transpile
   from qiskit_aer import Aer
   
   q = QuantumRegister(8, 'q') # initialisation d'un registre quantique de 8 qubits
@@ -240,6 +257,11 @@ On mesure ensuite chaque qubit pour obtenir un résultat aléatoire entre 0 et 1
   circuit.h(q[5])
   circuit.h(q[6])
   circuit.h(q[7])
+
+  """
+  for elt_qubit in q:
+      circuit.h(elt)
+  """
   
   circuit.measure(q, c) # mesure de tous les qubits dans les bits classiques correspondants
 \end{lstlisting}
@@ -269,6 +291,32 @@ Ce dictionnaire contient le nombre binaire 8 bits généré, avec sa fréquence 
 
 Ici, le nombre généré est 00001010, qui correspond à 10 en décimal. On peut donc dire que le nombre aléatoire généré est 10.
 
+\subsubsection{Visualisation du circuit}
+
+Il est possible de visualiser le circuit quantique généré avec Qiskit. Pour cela, on utilise la méthode \texttt{circuit\_drawer()} du circuit.
+
+\begin{lstlisting}[language=Python, style=mystyle, caption={Visualisation du circuit}]
+  from qiskit import QuantumCircuit
+
+  circuit_drawer(circuit, output='mpl')
+\end{lstlisting}
+
+On obtient bien un schéma de circuit quantique avec les portes Hadamard et les mesures, comme celle vue précédemment.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{img/circuitPy.png}
+  \caption{Schéma de circuit quantique pour la génération d'un nombre aléatoire avec 8 qubits, généré à partir de Qiskit}
+\end{figure}
+
+
+\subsection{Conclusion de l'expérimentation}
+
+Cette expérimentation est sûrement la plus simple à réaliser et à comprendre pour un débutant en informatique quantique. Elle permet de mettre en pratique les concepts de superposition et de mesure des qubits en quelques lignes de code.
+
+Il n'y a pas grand chose à faire de plus si vous souhaitez essayer sur une vraie machine quantique, il suffit de changer le backend du simulateur Aer pour un vrai ordinateur quantique. Cependant, il est important de noter que les ordinateurs quantiques sont encore en développement et, il peut y avoir en conséquence, des erreurs dans les résultats.
+Les simulations quantiques offrent une alternative plus fiable pour l'instant, bien qu'un manque de scalabilité soit présent pour des circuits plus complexes, ainsi qu'un manque de réalisme quantique.
+
 \break\section{Limites et perspectives}
 \subsection{Défis actuels}
 \subsection{Futur de l'informatique quantique}
@@ -277,8 +325,7 @@ Ici, le nombre généré est 00001010, qui correspond à 10 en décimal. On peut
 \subsection{Récapitulatif des points clés}
 \subsection{Session de questions-réponses}
 
-\break
-\section{Bibliographie}
+\break\section{Bibliographie}
 \printbibliography
 
 \end{document}
