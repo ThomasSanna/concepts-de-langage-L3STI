@@ -1,0 +1,35 @@
+# filepath: c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\tp\Makefile
+
+# Compiler
+CC = gcc
+
+# Options de compilation
+CFLAGS = -Wall -Wextra -std=c11
+
+# Nom de l'exécutable
+TARGET = listesTPExo1
+
+# Fichiers sources
+SRCS = listesTPExo1MainCodeDepart.c
+
+# Fichiers objets
+OBJS = $(SRCS:.c=.o)
+
+# Règle par défaut
+all: $(TARGET)
+
+# Règle pour créer l'exécutable
+$(TARGET): $(OBJS)
+    $(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+
+# Règle pour créer les fichiers objets
+%.o: %.c
+    $(CC) $(CFLAGS) -c $< -o $@
+
+# Règle pour nettoyer les fichiers générés
+clean:
+    rm -f $(TARGET) $(OBJS)
+
+# Règle pour exécuter le programme
+run: $(TARGET)
+    ./$(TARGET)
