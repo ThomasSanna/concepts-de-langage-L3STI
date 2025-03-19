@@ -1,6 +1,6 @@
 /*
     Documentation section
-    @Project Geometrie en L3 
+    @Project TP1 Exercice 1
     @Author Sanna Thomas
     @Author Nivet Marie-Laure
     @Created 20250319
