@@ -78,12 +78,217 @@ Ainsi, l'informatique quantique est une application pratique de la physique quan
 
 \break\section{Informatique classique vs. Informatique quantique}
 \subsection{Bits classiques}
+En informatique classique, l’unité de base est le \textbf{bit} :
+
+\[ 0 \text{ ou } 1 \]
+
+En réalité, il correspond à la mesure d’\textbf{absence} ($0$) ou de \textbf{présence} ($1$) d’électricité dans les transistors de nos ordinateurs classiques.
+
+Mis à la suite, ces bits forment alors un langage complet, un système binaire qui permet de transmettre une vaste quantité d'informations différentes.
+
+Avec une série de bits, on peut encoder tous types de nombres :
+
+\[ 168_{10} \rightarrow 10101000_2 \]
+
+Et les booléens essentiels aux portes logiques :
+
+\[ 1 \rightarrow \text{True} \quad | \quad 0 \rightarrow \text{False} \]
+
+Avec ces blocs fondamentaux, nous pouvons alors presque décrire tout ce que l’on souhaite :
+\medskip
+\begin{itemize}
+    \item Une couleur : 3 valeurs de vert, bleu et rouge situées entre 0 et 255.
+    \item Les caractères avec lesquels sont écrits ce rapport : un nombre représentant chacun des symboles.
+    \item Une position $x$, $y$ de votre souris.
+\end{itemize}
+\medskip
+Et surtout : effectuer des \textbf{calculs}, d’abord simples, puis une suite de calculs plus complexes, sous forme d’algorithmes. C’est dans ce domaine que le bit quantique va pouvoir être utile et surpasser le bit classique.
+
 \subsection{Qubits quantiques}
+
+En informatique quantique, l’unité de base est le \textbf{qubit}. Contrairement au bit classique qui peut être soit $0$ soit $1$, un qubit peut exister dans une superposition des deux états, \textbf{0 et 1 simultanément}. \cite{wikiQubit2025} Ce concept peut sembler étrange au premier abord... et il ne l’est pas moins par la suite ! Mais il constitue la base de l'informatique quantique et nous allons essayer de comprendre comment il permet d'ouvrir la voie à des calculs bien plus puissants que ceux possibles avec des ordinateurs classiques.
+
+Un bit quantique n’est alors plus la mesure d’un courant mais la mesure d’un \textbf{phénomène physique} tel que le spin d'une particule ou la polarisation d'un photon.
+
+L’informatique quantique repose sur quatre principes clés : \textbf{Superposition}, \textbf{Intrication}, \textbf{Décohérence}, \textbf{Interférence}. \cite{ibmQuantum2024}
+\medskip
+Nous allons explorer chacun de ces principes en détails, pour le moment, commençons par les présentations :
+
+\begin{enumerate}
+    \item \textbf{Superposition} : Un qubit peut être dans un état de $0$ et $1$ en même temps, ce qui lui permet de réaliser plusieurs calculs simultanément.
+    \item \textbf{Intrication} : Deux qubits peuvent être entrelacés de sorte que l'état de l'un dépend instantanément de l'état de l'autre, même à distance.
+    \item \textbf{Décohérence} : Les qubits sont extrêmement sensibles à leur environnement, ce qui peut provoquer une perte d'information (c'est ce qu'on appelle la décohérence). Cela représente un des défis majeurs pour les ordinateurs quantiques.
+    \item \textbf{Interférence} : Les états des qubits peuvent interférer entre eux, ce qui permet d’amplifier certaines probabilités et d’annuler d'autres, optimisant ainsi le calcul.
+\end{enumerate}
+\medskip
+\subsection{Comparaison}
+
+\begin{tabular}{|l|p{7cm}|}  % Ajuste la largeur de la colonne selon tes besoins
+  \hline
+  \textbf{Bits classiques} & \textbf{Qubits quantiques} \\
+  \hline
+  $0$ ou $1$ & $0$, $1$, ou une superposition des deux états ($0$ et $1$ en même temps) \\
+  \hline
+  Présence ou absence d’électricité & Superposition d'états grâce à des phénomènes quantiques \\
+  \hline
+  Utilise des portes logiques classiques (ex : AND, OR) & Utilise des portes quantiques (ex : Hadamard, CNOT) qui exploitent la superposition et l'entrelacement \\
+  \hline
+  Ne peut effectuer qu'un calcul à la fois & Peut effectuer plusieurs calculs simultanément grâce à la superposition \\
+  \hline
+  La mesure donne un résultat définitif : $0$ ou $1$ & La mesure "effondre" le qubit dans l'un des deux états avec une probabilité \\
+  \hline
+  Calculs classiques, affichage, stockage de données & Résolution de problèmes complexes (cryptographie, optimisation, simulation moléculaire) \\
+  \hline
+\end{tabular}
+
+
 
 \break\section{Propriétés fondamentales de l'informatique quantique}
 \subsection{Superposition}
-\subsection{Intrication}
+Commençons donc par la superposition, cette fameuse idée de qubit dans des états de $0$ et $1$ simultanés.
+
+Un qubit est défini par :
+
+\[ |\psi\rangle = \alpha|0\rangle + \beta|1\rangle \]
+
+Où $\alpha$ et $\beta$ sont des amplitudes complexes qui déterminent les probabilités d’obtenir respectivement $0$ ou $1$ lors d’une mesure, $\alpha$ et $\beta$ vérifiant $|\alpha|^2 + |\beta|^2 = 1$ (probabilités des états $0$ et $1$).\cite{evidenCorte2024} C’est la représentation mathématique d’un qubit en notation bra-ket (notation de Dirac). (On utilise la notation $|0\rangle$ et $|1\rangle$ au lieu de juste $0$ et $1$ pour bien différencier qu’on parle d’un état quantique et pour utiliser certaines propriétés mathématiques et physiques).
+
+Par exemple, l’état $\frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$ signifie que le qubit a 50\% de chances d’être mesuré dans l’état $|0\rangle$ et 50\% de chances d’être mesuré dans l’état $|1\rangle$ : $\left|\frac{1}{\sqrt{2}}\right|^2 = \frac{1}{2}$.
+
+\medskip
+
+Les probabilités de mesurer $|0\rangle$ ou $|1\rangle$ sont bien égales à $\frac{1}{2}$.
+
+Cet état de superposition est créé à l’aide d’une porte de Hadamard, qui permet de générer une superposition, nous y reviendrons un peu plus tard.
+
+Grâce à la superposition, un processeur quantique peut explorer plusieurs solutions en parallèle, contrairement à un ordinateur classique qui traite les données séquentiellement. Un processeur quantique ne donne cependant pas toutes les solutions instantanément : il faut encore une mesure finale pour obtenir un résultat exploitable.
+
+Concrètement, cela permet d’effectuer certaines opérations sur tous ces états en parallèle, au lieu de les traiter un par un : Imaginons que l’on cherche le bon code à 4 chiffres pour ouvrir un cadenas.
+\medskip
+\begin{itemize}
+    \item Un ordinateur classique va essayer 0000, 0001, 0002, ..., 9999 un par un jusqu’à trouver le bon. (Même si quelques optimisations sont possibles)
+    \item Un ordinateur quantique peut tester toutes les combinaisons en même temps, puis utiliser un algorithme spécial pour trouver la bonne bien plus vite.
+\end{itemize}
+
+\subsection{Mesure}
+
+Lorsqu’on mesure un qubit, il \textbf{se fige dans un état classique} ($0$ ou $1$) avec une certaine probabilité.
+
+\[ P(0) = |\alpha|^2 \]
+\[ P(1) = |\beta|^2 \]
+
+Après la mesure, la superposition disparaît.
+
+Cette mesure dépend de la méthode utilisée : le qubit lui-même, physiquement, peut être représenté selon différentes méthodes (atomes, ions, supraconducteurs).\cite{microsoftQubit2025}\cite{stackexchangeQubitState2019}
+
+\subsection{Intrication (Entanglement)}
+
+Deux qubits peuvent être intriqués, ce qui signifie que leur état est corrélé, même s’ils sont séparés par des milliers de kilomètres.
+
+L’explication physique relève de la physique quantique, mais le phénomène est bien réel et est utilisé pour permettre le parallélisme quantique : la capacité des ordinateurs quantiques à effectuer plusieurs calculs simultanément. Ainsi, les ordinateurs quantiques manipulent plusieurs qubits en une seule opération, au lieu de manipuler chaque qubit individuellement.
+
+Par exemple, considérons deux qubits qui sont initialement préparés dans un état intriqué. Si une mesure est effectuée sur l’un des qubits et que l’on découvre qu’il est dans l’état $|0\rangle$, alors l’état de l’autre qubit s’effondre immédiatement dans l’état $|0\rangle$ aussi. De même, si le premier qubit est mesuré dans l’état $|1\rangle$, l’état du second qubit s’effondre également dans l’état $|1\rangle$.\cite{microsoftEntanglement2025}
+
+\subsection{Porte quantique et calcul quantique}
+
+Les qubits sont manipulés à l’aide de \textbf{portes quantiques}.
+
+Pour rappel, en informatique classique, nous avons les portes :
+
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Porte NOT} & \textbf{Porte AND} & \textbf{Porte OR} \\
+  \hline
+  Inverse l'état du bit & 
+  \begin{tabular}{@{}l@{}} 
+      Renvoie 1 seulement \\ 
+      si les deux entrées sont 1 
+  \end{tabular} & 
+  \begin{tabular}{@{}l@{}} 
+      Renvoie 1 si au moins \\ 
+      une des entrées est 1 
+  \end{tabular} \\
+  \hline
+\end{tabular}
+
+
+Et autres combinaisons. Ce sont ces portes qui permettent de faire des calculs logiques, des opérations d'addition et bien d'autres dans nos ordinateurs.
+
+Il existe leurs équivalents en informatique quantique :
+
+\begin{tabular}{|l|l|}
+    \hline
+    \textbf{Porte Hadamard (H)} & \textbf{Porte CNOT} \\
+    \hline
+    Crée une superposition & Crée l’intrication entre qubits \\
+    \hline
+\end{tabular}
+
+Détailons leur fonctionnement :
+
+\subsubsection{Porte Hadamard (H)}
+
+La porte Hadamard est l’une des portes fondamentales en informatique quantique.
+
+La porte Hadamard transforme un qubit dans l’état $|0\rangle$ en une superposition égale des états $|0\rangle$ et $|1\rangle$, avec une probabilité de 50\% pour chaque. Par exemple, si un qubit est dans l'état $|0\rangle$, après l'application de la porte Hadamard, il sera dans l'état :
+
+\[ \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \]
+
+Physiquement, cette porte est réalisée avec des impulsions électromagnétiques dans un ordinateur quantique supraconducteur.
+
+La porte Hadamard perturbe le qubit en le mettant dans un état instable tant qu’on ne le mesure pas.
+
+C’est comme jeter une pièce en l’air : tant qu’elle tourne, elle n’est ni pile ni face, mais une combinaison des deux.
+
+\subsubsection{Porte CNOT}
+
+La porte CNOT agit sur deux qubits :
+\medskip
+\begin{itemize}
+    \item Si le qubit de contrôle est $|0\rangle$, rien ne change.
+    \item Si le qubit de contrôle est $|1\rangle$, le qubit cible est inversé ($|0\rangle$ devient $|1\rangle$ et inversement).
+\end{itemize}
+\medskip
+Exemple d’utilisation :
+\medskip
+On commence avec $|00\rangle$. Après une porte Hadamard sur le premier qubit, l’état devient :
+
+\[ \frac{1}{\sqrt{2}}(|00\rangle + |10\rangle) \]
+
+Puis, la porte CNOT inverse le deuxième qubit si le premier est $|1\rangle$, donnant :
+
+\[ \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle) \]
+
+Lors de la mesure du premier qubit :
+\medskip
+\begin{itemize}
+    \item Si $|0\rangle$, le second est aussi $|0\rangle$.
+    \item Si $|1\rangle$, le second est $|1\rangle$.
+\end{itemize}
+\medskip
+Les qubits sont intriqués, avec une corrélation instantanée.
+\medskip
+En bref, comme en informatique classique, on utilise ces “portes” pour manipuler les données (bits ou qubits) rentrantes et appliquer des calculs dessus. En informatique quantique, on manipule pour ensuite faire des calculs sur les probabilités.
+\medskip
+
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{} & \textbf{Porte de Hadamard} & \textbf{Porte CNOT} \\
+  \hline
+  \textbf{Entrée : } & $|0\rangle$ & $|AB\rangle$ \\
+  \hline
+  \textbf{Sortie : } & $\frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$ & 
+  \begin{tabular}{@{}l@{}} 
+      Si $A = 0 \rightarrow |AB\rangle$ \\ 
+      Si $A = 1 \rightarrow |A\overline{B}\rangle$ 
+  \end{tabular} \\
+  \hline
+\end{tabular}
+
 \subsection{Interférence}
+
+L'interférence quantique se produit lorsque les amplitudes de probabilité des différents états d'un système quantique se combinent. Selon la manière dont elles se combinent, les probabilités de certains résultats peuvent être amplifiées (interférence constructive) ou diminuées (interférence destructive). C’est un effet clé pour exploiter pleinement la puissance des ordinateurs quantiques, car il permet d’augmenter les chances de certains résultats tout en réduisant celles des autres.
+
 
 \break\section{Génération de Nombre aléatoire}
 \subsection{Problématique}

@@ -65,6 +65,52 @@
       \field{title}{{W}hat are the differences between {Q}iskit's {A}er{S}imulator, {Q}asm{S}imulator and {S}tatevector{S}imulator? --- quantumcomputing.stackexchange.com}
       \field{year}{2022}
     \endentry
+    \entry{evidenCorte2024}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e5350585518ea6fa254b10021028da50}{%
+           family={EVIDEN},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5350585518ea6fa254b10021028da50}
+      \strng{fullhash}{e5350585518ea6fa254b10021028da50}
+      \strng{bibnamehash}{e5350585518ea6fa254b10021028da50}
+      \strng{authorbibnamehash}{e5350585518ea6fa254b10021028da50}
+      \strng{authornamehash}{e5350585518ea6fa254b10021028da50}
+      \strng{authorfullhash}{e5350585518ea6fa254b10021028da50}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{}}
+      \field{note}{[Accédé le 16-03-2025]}
+      \field{title}{Formation Corte/MesoNet - Damien Nicolazic}
+      \field{year}{2024}
+    \endentry
+    \entry{ibmQuantum2024}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cbf44511d041dc6d1dd73cc0c033122c}{%
+           family={IBM},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.ibm.com/fr-fr/topics/quantum-computing}}
+      \field{note}{[Accédé le 15-03-2025]}
+      \field{title}{Qu’est-ce que l’informatique quantique}
+      \field{year}{2024}
+    \endentry
     \entry{wikipediaQuantumPlatform}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=eab8d7935fa17aba7cf7c48481a829a0}{%
@@ -86,6 +132,52 @@
       \field{howpublished}{\url{https://en.wikipedia.org/wiki/IBM_Quantum_Platform}}
       \field{note}{[Accedé le 13-03-2025]}
       \field{title}{{I}{B}{M} {Q}uantum {P}latform - {W}ikipedia --- en.wikipedia.org}
+      \field{year}{2025}
+    \endentry
+    \entry{microsoftQubit2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6ef686b32faf3c870b16770ecf4de086}{%
+           family={MICROSOFT},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ef686b32faf3c870b16770ecf4de086}
+      \strng{fullhash}{6ef686b32faf3c870b16770ecf4de086}
+      \strng{bibnamehash}{6ef686b32faf3c870b16770ecf4de086}
+      \strng{authorbibnamehash}{6ef686b32faf3c870b16770ecf4de086}
+      \strng{authornamehash}{6ef686b32faf3c870b16770ecf4de086}
+      \strng{authorfullhash}{6ef686b32faf3c870b16770ecf4de086}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://learn.microsoft.com/fr-fr/azure/quantum/concepts-the-qubit}}
+      \field{note}{[Accédé le 16-03-2025]}
+      \field{title}{Le qubit en informatique quantique}
+      \field{year}{2025}
+    \endentry
+    \entry{microsoftEntanglement2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://quantum.microsoft.com/en-us/insights/education/concepts/entanglement}}
+      \field{note}{[Accédé le 17-03-2025]}
+      \field{title}{Entanglement}
       \field{year}{2025}
     \endentry
     \entry{wikipediaQiskitWikipedia}{misc}{}
@@ -136,6 +228,52 @@
       \field{note}{[Accedé le 13-03-2025]}
       \field{title}{{T}rue randomness with {Q}uantum ( {Q}uantum {R}andom number generator ) --- community.sap.com}
       \field{year}{2023}
+    \endentry
+    \entry{stackexchangeQubitState2019}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f25cb1c6953bb0c62c639f3d7a242ec4}{%
+           family={StackExchange},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f25cb1c6953bb0c62c639f3d7a242ec4}
+      \strng{fullhash}{f25cb1c6953bb0c62c639f3d7a242ec4}
+      \strng{bibnamehash}{f25cb1c6953bb0c62c639f3d7a242ec4}
+      \strng{authorbibnamehash}{f25cb1c6953bb0c62c639f3d7a242ec4}
+      \strng{authornamehash}{f25cb1c6953bb0c62c639f3d7a242ec4}
+      \strng{authorfullhash}{f25cb1c6953bb0c62c639f3d7a242ec4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://quantumcomputing.stackexchange.com/questions/9358/how-are-states-of-a-qubit-measured-in-a-quantum-computer}}
+      \field{note}{[Accédé le 16-03-2025]}
+      \field{title}{How are states of a qubit measured in a quantum computer?}
+      \field{year}{2019}
+    \endentry
+    \entry{wikiQubit2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ae6ede6f3dcd15cdb60c416075545227}{%
+           family={WIKI},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae6ede6f3dcd15cdb60c416075545227}
+      \strng{fullhash}{ae6ede6f3dcd15cdb60c416075545227}
+      \strng{bibnamehash}{ae6ede6f3dcd15cdb60c416075545227}
+      \strng{authorbibnamehash}{ae6ede6f3dcd15cdb60c416075545227}
+      \strng{authornamehash}{ae6ede6f3dcd15cdb60c416075545227}
+      \strng{authorfullhash}{ae6ede6f3dcd15cdb60c416075545227}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Qubit}}
+      \field{note}{[Accédé le 15-03-2025]}
+      \field{title}{Qubits – Wikipedia}
+      \field{year}{2025}
     \endentry
     \entry{wikipediaPorteQuantique}{misc}{}
       \name{author}{1}{}{%
