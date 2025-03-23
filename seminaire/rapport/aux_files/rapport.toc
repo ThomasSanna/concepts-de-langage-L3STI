@@ -31,8 +31,7 @@
 \contentsline {subsection}{\numberline {6.1}Défis actuels}{20}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Futur de l'informatique quantique}{20}{subsection.6.2}%
 \contentsline {section}{\numberline {7}Conclusion et Q\&A}{23}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Récapitulatif des points clés}{23}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Session de questions-réponses}{23}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.1}Session de questions-réponses}{23}{subsection.7.1}%
 \contentsline {section}{\numberline {8}Annexes}{25}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Glossaire}{25}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Liens utiles}{25}{subsection.8.2}%
