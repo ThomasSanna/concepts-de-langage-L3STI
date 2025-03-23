@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.12)  21 MAR 2025 20:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.12)  23 MAR 2025 19:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -544,61 +544,80 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box56
 \@float@everytoks=\toks28
 \@floatcapt=\box57
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen170
+\ar@mcellbox=\box58
+\extrarowheight=\dimen171
+\NC@list=\toks29
+\extratabsurround=\skip85
+\backup@length=\skip86
+\ar@cellbox=\box59
+)
+\TX@col@width=\dimen172
+\TX@old@table=\dimen173
+\TX@old@col=\dimen174
+\TX@target=\dimen175
+\TX@delta=\dimen176
+\TX@cols=\count430
+\TX@ftn=\toks30
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count430
-\@quotereset=\count431
+\@quotelevel=\count431
+\@quotereset=\count432
 (c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Info: Redefining \degres on input line 52.
-LaTeX Info: Redefining \up on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Info: Redefining \degres on input line 53.
+LaTeX Info: Redefining \up on input line 53.
 
 
 Package french.ldf Warning: OT1 encoding should not be used for French.
 (french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(french.ldf)                of your document; reported on input line 52.
+(french.ldf)                of your document; reported on input line 53.
 
-\c@lstlisting=\count432
-Package hyperref Info: Link coloring OFF on input line 52.
+\c@lstlisting=\count433
+Package hyperref Info: Link coloring OFF on input line 53.
 (c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.out) (c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.out)
 \@outlinefile=\write4
 \openout4 = `rapport.out'.
 
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count433
-\scratchdimen=\dimen170
-\scratchbox=\box58
-\nofMPsegments=\count434
-\nofMParguments=\count435
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count436
-\MPscratchDim=\dimen171
-\MPnumerator=\count437
-\makeMPintoPDFobject=\count438
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count434
+\scratchdimen=\dimen177
+\scratchbox=\box60
+\nofMPsegments=\count435
+\nofMParguments=\count436
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count437
+\MPscratchDim=\dimen178
+\MPnumerator=\count438
+\makeMPintoPDFobject=\count439
+\everyMPtoPDFconversion=\toks32
 ) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -618,164 +637,295 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'rapport.bbl' found.
  (c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.bbl)
-Package biblatex Info: Reference section=0 on input line 52.
-Package biblatex Info: Reference segment=0 on input line 52.
- (c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.toc [1
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
+<img/univCorse.png, id=159, 487.3407pt x 154.8987pt>
+File: img/univCorse.png Graphic file (type png)
+<use img/univCorse.png>
+Package pdftex.def Info: img/univCorse.png  used on input line 57.
+(pdftex.def)             Requested size: 172.5pt x 54.8275pt.
+ [1
 
-{C:/Users/thoma/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}])
+{C:/Users/thoma/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./img/univCorse.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \break
+           \tableofcontents [1] (c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.toc [2])
 \tf@toc=\write5
 \openout5 = `rapport.toc'.
 
- [2]
-Overfull \hbox (6.55606pt too wide) in paragraph at lines 67--68
+ [3]
+Overfull \hbox (6.55606pt too wide) in paragraph at lines 101--102
 []\OT1/cmr/m/n/10 Nous avons choisi ce su-jet car l'in-for-ma-tique quan-tique repr^^Sesente une fronti^^Rere
  []
 
 
-Overfull \hbox (13.29027pt too wide) in paragraph at lines 69--69
+Overfull \hbox (13.29027pt too wide) in paragraph at lines 103--103
 []\OT1/cmr/bx/n/12 Relation entre in-for-ma-tique quan-tique et phy-sique quan-
  []
 
-[3] [4]
-Overfull \hbox (3.2537pt too wide) in paragraph at lines 101--102
+[4] [5]
+Overfull \hbox (3.2537pt too wide) in paragraph at lines 135--136
 []\OT1/cmr/m/n/10 Les ca-ract^^Reres avec les-quels sont ^^Secrits ce rap-port : un nombre repr^^Sesentant
  []
 
-[5]
-Overfull \hbox (126.64185pt too wide) in paragraph at lines 126--143
-[][] 
- []
-
 [6]
-Overfull \hbox (23.39624pt too wide) in paragraph at lines 146--146
-[]\OT1/cmr/bx/n/14.4 Propri^^Set^^Ses fon-da-men-tales de l'in-for-ma-tique quan-
+Underfull \hbox (badness 1189) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 Superposition d'^^Setats gr^ace ^^Ra des
  []
 
-[7]
-Overfull \hbox (2.00159pt too wide) in paragraph at lines 237--238
-[]\OT1/cmr/m/n/10 Physiquement, cette porte est r^^Sealis^^See avec des im-pul-sions ^^Selectromagn^^Setiques
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 La me-sure donne un r^^Sesultat
  []
 
-[8] [9] [10] [11
+
+Underfull \hbox (badness 3803) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 Calculs clas-siques, af-fi-chage, sto-
+ []
+
+[7
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.370 \textbf{Porte Hadamard}
-                              :]
-<img/hadamard.png, id=259, 150.5625pt x 63.23625pt>
+l.184 \break
+            \section{Propriétés fondamentales de l'informatique quantique}]
+Overfull \hbox (23.39624pt too wide) in paragraph at lines 184--184
+[]\OT1/cmr/bx/n/14.4 Propri^^Set^^Ses fon-da-men-tales de l'in-for-ma-tique quan-
+ []
+
+[8] [9
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.272 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.272 
+      ]
+Overfull \hbox (2.00159pt too wide) in paragraph at lines 275--276
+[]\OT1/cmr/m/n/10 Physiquement, cette porte est r^^Sealis^^See avec des im-pul-sions ^^Selectromagn^^Setiques
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--312
+
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 325--327
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
+
+ []
+
+[10] [11]
+Overfull \hbox (6.24663pt too wide) in paragraph at lines 333--333
+[]\OT1/cmr/bx/n/14.4 Exemple d'ap-pli-ca-tion : G^^Sen^^Seration de Nombre
+ []
+
+[12] [13
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.387 \break
+            \section{Expérimentation : coder un algorithme quantique}]
+<img/hadamard.png, id=296, 150.5625pt x 63.23625pt>
 File: img/hadamard.png Graphic file (type png)
 <use img/hadamard.png>
-Package pdftex.def Info: img/hadamard.png  used on input line 378.
+Package pdftex.def Info: img/hadamard.png  used on input line 422.
 (pdftex.def)             Requested size: 103.50105pt x 43.47191pt.
-<img/mesure.png, id=263, 150.5625pt x 54.2025pt>
-File: img/mesure.png Graphic file (type png)
-<use img/mesure.png>
-Package pdftex.def Info: img/mesure.png  used on input line 392.
-(pdftex.def)             Requested size: 103.50105pt x 37.26164pt.
-<img/portesLogiquesRandom.png, id=266, 377.41pt x 188.705pt>
-File: img/portesLogiquesRandom.png Graphic file (type png)
-<use img/portesLogiquesRandom.png>
-Package pdftex.def Info: img/portesLogiquesRandom.png  used on input line 411.
-(pdftex.def)             Requested size: 172.5pt x 86.24962pt.
- [12
+ [14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.414 
-      
+l.431 
+       <./img/hadamard.png>]
+<img/mesure.png, id=308, 150.5625pt x 54.2025pt>
+File: img/mesure.png Graphic file (type png)
+<use img/mesure.png>
+Package pdftex.def Info: img/mesure.png  used on input line 436.
+(pdftex.def)             Requested size: 103.50105pt x 37.26164pt.
+<img/portesLogiquesRandom.png, id=311, 377.41pt x 188.705pt>
+File: img/portesLogiquesRandom.png Graphic file (type png)
+<use img/portesLogiquesRandom.png>
+Package pdftex.def Info: img/portesLogiquesRandom.png  used on input line 455.
+(pdftex.def)             Requested size: 172.5pt x 86.24962pt.
+<img/portesLogiquesRandom8.png, id=314, 746.79pt x 631.60968pt>
+File: img/portesLogiquesRandom8.png Graphic file (type png)
+<use img/portesLogiquesRandom8.png>
+Package pdftex.def Info: img/portesLogiquesRandom8.png  used on input line 469.
+(pdftex.def)             Requested size: 241.49895pt x 204.24913pt.
+ [15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.414 
-       <./img/hadamard.png> <./img/mesure.png>]
-<img/portesLogiquesRandom8.png, id=280, 746.79pt x 631.60968pt>
-File: img/portesLogiquesRandom8.png Graphic file (type png)
-<use img/portesLogiquesRandom8.png>
-Package pdftex.def Info: img/portesLogiquesRandom8.png  used on input line 425.
-(pdftex.def)             Requested size: 241.49895pt x 204.24913pt.
- [13
+l.472 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.437   \item I
-               nstaller Python : \texttt{https://www.python.org/downloads/}
+l.472 
+       <./img/mesure.png> <./img/portesLogiquesRandom.png>] (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 493.
+ [16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.437   \item I
-               nstaller Python : \texttt{https://www.python.org/downloads/} <./img/portesLogiquesRandom.png> <./img/portesLogiquesRandom8.png>] (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 449.
- [14]
+l.497  
+        q = QuantumRegister(8, 'q') # initialisation d'un registre quantique... <./img/portesLogiquesRandom8.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 489.
+(Font)              using `OT1/cmr/m/sc' instead on input line 533.
 
 
-Overfull \hbox (1.39476pt too wide) in paragraph at lines 489--492
+Overfull \hbox (1.39476pt too wide) in paragraph at lines 533--536
 \OT1/cmtt/m/it/10 qasm[]simulator \OT1/cmr/m/it/10 est une ver-sion nient^ot ob-sol^^Rete du si-mu-la-teur Aer. On conseille
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--492
+Underfull \hbox (badness 10000) in paragraph at lines 533--536
 
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 494.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 538.
 (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 494.
-<img/circuitPy.png, id=326, 694.595pt x 627.34375pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 538.
+ [17]
+<img/circuitPy.png, id=376, 694.595pt x 627.34375pt>
 File: img/circuitPy.png Graphic file (type png)
 <use img/circuitPy.png>
-Package pdftex.def Info: img/circuitPy.png  used on input line 513.
+Package pdftex.def Info: img/circuitPy.png  used on input line 557.
 (pdftex.def)             Requested size: 241.49895pt x 218.11858pt.
- [15] [16
+ [18
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.525 \break
-            \section{Limites et perspectives} <./img/circuitPy.png>] [17] [18]
-Overfull \hbox (58.45868pt too wide) in paragraph at lines 535--535
+l.565 
+       <./img/circuitPy.png>] [19] [20]
+Overfull \hbox (5.41841pt too wide) in paragraph at lines 600--602
+\OT1/cmr/m/n/10 Bien que la cryp-to-gra-phie post-quantique soit un do-maine ma-jeur, d'autres
+ []
+
+[21
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.637 
+      ] [22
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.640 \break
+            \section{Conclusion et Q\&A}]
+Overfull \hbox (1.1117pt too wide) in paragraph at lines 656--657
+\OT1/cmr/m/n/10 pas re-pro-duire plei-ne-ment les avan-tages de la v^^Seritable com-pu-ta-tion quan-
+ []
+
+[23]
+Overfull \hbox (19.44716pt too wide) in paragraph at lines 671--672
+\OT1/cmr/m/n/10 qu-bits, la mise ^^Ra l'^^Sechelle des syst^^Remes, le be-soin en in-fra-struc-ture cryog^^Senique,
+ []
+
+
+Overfull \hbox (1.1672pt too wide) in paragraph at lines 677--678
+\OT1/cmr/m/n/10 vons en-core aux touts d^^Sebuts de l'in-for-ma-tique quan-tique et qu'il n^^Secessite
+ []
+
+[24]
+Overfull \hbox (2.62149pt too wide) in paragraph at lines 689--690
+[]\OT1/cmr/bx/n/10 Intrication \OT1/cmr/m/n/10 : Pro-pri^^Set^^Se quan-tique o^^Ru deux qu-bits sont li^^Ses de telle mani^^Rere
+ []
+
+
+Overfull \hbox (8.2131pt too wide) in paragraph at lines 696--697
+[]\OT1/cmr/bx/n/10 Superposition \OT1/cmr/m/n/10 : []Etat dans le-quel un qu-bit peut repr^^Sesenter si-mul-tan^^Sement
+ []
+
+
+Overfull \hbox (2.49982pt too wide) in paragraph at lines 704--705
+[]\OT1/cmr/bx/n/10 IBM Quan-tum Ex-pe-rience \OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https : / / quantum-[]computing . ibm . com/$[] 
+ []
+
+
+Overfull \hbox (3.52347pt too wide) in paragraph at lines 705--706
+[]\OT1/cmr/bx/n/10 Microsoft Quan-tum De-ve-lop-ment Kit \OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https : / / azure . microsoft .
+ []
+
+
+Overfull \hbox (16.72289pt too wide) in paragraph at lines 710--711
+[]\OT1/cmr/bx/n/10 Wikipedia \OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https : / / fr . wikipedia . org / wiki / Informatique _ quantique$[] 
+ []
+
+[25]
+Overfull \hbox (10.1672pt too wide) in paragraph at lines 739--740
+[]\OT1/cmr/m/n/10 L'IA a per-mis de cor-ri-ger cer-taines fautes d'or-tho-graphes, de cer-tains probl^^Remes
+ []
+
+[26]
+Overfull \hbox (58.45868pt too wide) in paragraph at lines 746--746
 \OT1/cmr/m/it/10 tor, Qasm-Si-mu-la-tor and Sta-te-vec-tor-Si-mu-la-tor ? --- quan-tum-com-pu-ting.stackexchange.com\OT1/cmr/m/n/10 .
  []
 
 
-Overfull \hbox (30.99689pt too wide) in paragraph at lines 535--535
+Overfull \hbox (30.99689pt too wide) in paragraph at lines 746--746
 \OT1/cmtt/m/n/10 what -[] are -[] the -[] differences -[] between -[] qiskits -[] aersimulator -[] qasmsimulator -[]
  []
 
 
-Overfull \hbox (3.82501pt too wide) in paragraph at lines 535--535
+Overfull \hbox (3.82501pt too wide) in paragraph at lines 746--746
 [][][]\OT1/cmr/m/sc/10 IBMQP []\OT1/cmr/m/n/10 (2025). \OT1/cmr/m/it/10 IBM Quan-tum Plat-form - Wi-ki-pe-dia --- en.wikipedia.org\OT1/cmr/m/n/10 . []$\OT1/cmtt/m/n/10 https :
  []
 
-[19] (c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.aux)
+
+Overfull \hbox (3.32913pt too wide) in paragraph at lines 746--746
+[][][]\OT1/cmr/m/sc/10 Neven[]\OT1/cmr/m/n/10 , Hart-mut (2024). \OT1/cmr/m/it/10 Meet Willow, our state-of-the-art quan-tum chip\OT1/cmr/m/n/10 . []$\OT1/cmtt/m/n/10 https :
+ []
+
+[27] [28] (c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: F2ECB185EFC80C70799D071DE150C5AB;6317.
+(rerunfilecheck)             Checksum: E2957654E9ADAD7444BC0EE8EC1A4248;7222.
 Package logreq Info: Writing requests to 'rapport.run.xml'.
 \openout1 = `rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21108 strings out of 474486
- 367184 string characters out of 5743755
- 2078542 words of memory out of 5000000
- 43062 multiletter control sequences out of 15000+600000
- 565297 words of font info for 62 fonts, out of 8000000 for 9000
+ 21304 strings out of 474486
+ 370910 string characters out of 5743755
+ 2139542 words of memory out of 5000000
+ 43225 multiletter control sequences out of 15000+600000
+ 564000 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,81p,777b,2222s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.pdf" (19 pages, 566966 bytes).
+ 75i,16n,81p,1229b,2210s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on "c:\Users\thoma\Desktop\programmes\L3STI\Semestre 2\concepts-de-langage-L3STI\seminaire\rapport\aux_files\rapport.pdf" (29 pages, 903438 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 

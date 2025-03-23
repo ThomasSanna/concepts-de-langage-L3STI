@@ -42,6 +42,32 @@
       \field{title}{{G}etting started - {Q}iskit {A}er 0.16.1 --- qiskit.github.io}
       \field{year}{2025}
     \endentry
+    \entry{microsoftMajorana}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4367026a8fa72b12493dc56bf7b48992}{%
+           family={Bolgar},
+           familyi={B\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4367026a8fa72b12493dc56bf7b48992}
+      \strng{fullhash}{4367026a8fa72b12493dc56bf7b48992}
+      \strng{bibnamehash}{4367026a8fa72b12493dc56bf7b48992}
+      \strng{authorbibnamehash}{4367026a8fa72b12493dc56bf7b48992}
+      \strng{authornamehash}{4367026a8fa72b12493dc56bf7b48992}
+      \strng{authorfullhash}{4367026a8fa72b12493dc56bf7b48992}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://news.microsoft.com/source/features/innovation/microsofts-majorana-1-chip-carves-new-path-for-quantum-computing/}}
+      \field{note}{[Accedé le 21-02-2025]}
+      \field{title}{Microsoft’s Majorana 1 chip carves new path for quantum computing}
+      \field{year}{2025}
+    \endentry
     \entry{stackexchangeWhatDifferences}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=acb5527665b36de3c1de423b9f225a85}{%
@@ -67,16 +93,16 @@
     \endentry
     \entry{evidenCorte2024}{misc}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e5350585518ea6fa254b10021028da50}{%
-           family={EVIDEN},
+        {{un=0,uniquepart=base,hash=8889b510c63793c8d7deca68496a157a}{%
+           family={EvidenCorte},
            familyi={E\bibinitperiod}}}%
       }
-      \strng{namehash}{e5350585518ea6fa254b10021028da50}
-      \strng{fullhash}{e5350585518ea6fa254b10021028da50}
-      \strng{bibnamehash}{e5350585518ea6fa254b10021028da50}
-      \strng{authorbibnamehash}{e5350585518ea6fa254b10021028da50}
-      \strng{authornamehash}{e5350585518ea6fa254b10021028da50}
-      \strng{authorfullhash}{e5350585518ea6fa254b10021028da50}
+      \strng{namehash}{8889b510c63793c8d7deca68496a157a}
+      \strng{fullhash}{8889b510c63793c8d7deca68496a157a}
+      \strng{bibnamehash}{8889b510c63793c8d7deca68496a157a}
+      \strng{authorbibnamehash}{8889b510c63793c8d7deca68496a157a}
+      \strng{authornamehash}{8889b510c63793c8d7deca68496a157a}
+      \strng{authorfullhash}{8889b510c63793c8d7deca68496a157a}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{extradatescope}{labelyear}
@@ -87,6 +113,29 @@
       \field{note}{[Accédé le 16-03-2025]}
       \field{title}{Formation Corte/MesoNet - Damien Nicolazic}
       \field{year}{2024}
+    \endentry
+    \entry{wikipediaAlgorithmeGrover}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6bfba29ea353a43dabcabaf1686f79ab}{%
+           family={Grover},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{6bfba29ea353a43dabcabaf1686f79ab}
+      \strng{fullhash}{6bfba29ea353a43dabcabaf1686f79ab}
+      \strng{bibnamehash}{6bfba29ea353a43dabcabaf1686f79ab}
+      \strng{authorbibnamehash}{6bfba29ea353a43dabcabaf1686f79ab}
+      \strng{authornamehash}{6bfba29ea353a43dabcabaf1686f79ab}
+      \strng{authorfullhash}{6bfba29ea353a43dabcabaf1686f79ab}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Algorithme_de_Grover}}
+      \field{note}{[Accedé le 13-02-2025]}
+      \field{title}{{A}lgorithme de {G}rover — {W}ikipédia --- fr.wikipedia.org}
+      \field{year}{2025}
     \endentry
     \entry{ibmQuantum2024}{misc}{}
       \name{author}{1}{}{%
@@ -134,29 +183,6 @@
       \field{title}{{I}{B}{M} {Q}uantum {P}latform - {W}ikipedia --- en.wikipedia.org}
       \field{year}{2025}
     \endentry
-    \entry{microsoftQubit2025}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=6ef686b32faf3c870b16770ecf4de086}{%
-           family={MICROSOFT},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{6ef686b32faf3c870b16770ecf4de086}
-      \strng{fullhash}{6ef686b32faf3c870b16770ecf4de086}
-      \strng{bibnamehash}{6ef686b32faf3c870b16770ecf4de086}
-      \strng{authorbibnamehash}{6ef686b32faf3c870b16770ecf4de086}
-      \strng{authornamehash}{6ef686b32faf3c870b16770ecf4de086}
-      \strng{authorfullhash}{6ef686b32faf3c870b16770ecf4de086}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://learn.microsoft.com/fr-fr/azure/quantum/concepts-the-qubit}}
-      \field{note}{[Accédé le 16-03-2025]}
-      \field{title}{Le qubit en informatique quantique}
-      \field{year}{2025}
-    \endentry
     \entry{microsoftEntanglement2025}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=140864078aeca1c7c35b4beb33c53c34}{%
@@ -169,8 +195,10 @@
       \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -178,6 +206,80 @@
       \field{howpublished}{\url{https://quantum.microsoft.com/en-us/insights/education/concepts/entanglement}}
       \field{note}{[Accédé le 17-03-2025]}
       \field{title}{Entanglement}
+      \field{year}{2025}
+    \endentry
+    \entry{microsoftQubit2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://learn.microsoft.com/fr-fr/azure/quantum/concepts-the-qubit}}
+      \field{note}{[Accédé le 16-03-2025]}
+      \field{title}{Le qubit en informatique quantique}
+      \field{year}{2025}
+    \endentry
+    \entry{googleWillow}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ddcc46c5456340da59be4077c7102a27}{%
+           family={Neven},
+           familyi={N\bibinitperiod},
+           given={Hartmut},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ddcc46c5456340da59be4077c7102a27}
+      \strng{fullhash}{ddcc46c5456340da59be4077c7102a27}
+      \strng{bibnamehash}{ddcc46c5456340da59be4077c7102a27}
+      \strng{authorbibnamehash}{ddcc46c5456340da59be4077c7102a27}
+      \strng{authornamehash}{ddcc46c5456340da59be4077c7102a27}
+      \strng{authorfullhash}{ddcc46c5456340da59be4077c7102a27}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://blog.google/technology/research/google-willow-quantum-chip/}}
+      \field{note}{[Accedé le 21-03-2025]}
+      \field{title}{Meet Willow, our state-of-the-art quantum chip}
+      \field{year}{2024}
+    \endentry
+    \entry{wikipediaPorteQuantique}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e6ec2cfaba7b7cb5582157375a4a1729}{%
+           family={QGate},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6ec2cfaba7b7cb5582157375a4a1729}
+      \strng{fullhash}{e6ec2cfaba7b7cb5582157375a4a1729}
+      \strng{bibnamehash}{e6ec2cfaba7b7cb5582157375a4a1729}
+      \strng{authorbibnamehash}{e6ec2cfaba7b7cb5582157375a4a1729}
+      \strng{authornamehash}{e6ec2cfaba7b7cb5582157375a4a1729}
+      \strng{authorfullhash}{e6ec2cfaba7b7cb5582157375a4a1729}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Porte_quantique}}
+      \field{note}{[Accedé le 13-03-2025]}
+      \field{title}{{P}orte quantique — {W}ikipédia --- fr.wikipedia.org}
       \field{year}{2025}
     \endentry
     \entry{wikipediaQiskitWikipedia}{misc}{}
@@ -206,6 +308,52 @@
       \field{title}{{Q}iskit - {W}ikipedia --- en.wikipedia.org}
       \field{year}{2025}
     \endentry
+    \entry{wikipediaQProcessors}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=258e91706bfcbb5811298ac43afb3b8f}{%
+           family={QProcessors},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{258e91706bfcbb5811298ac43afb3b8f}
+      \strng{fullhash}{258e91706bfcbb5811298ac43afb3b8f}
+      \strng{bibnamehash}{258e91706bfcbb5811298ac43afb3b8f}
+      \strng{authorbibnamehash}{258e91706bfcbb5811298ac43afb3b8f}
+      \strng{authornamehash}{258e91706bfcbb5811298ac43afb3b8f}
+      \strng{authorfullhash}{258e91706bfcbb5811298ac43afb3b8f}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://en.wikipedia.org/wiki/List_of_quantum_processors}}
+      \field{note}{[Accedé le 21-02-2025]}
+      \field{title}{List of quantum processors – Wikipedia}
+      \field{year}{2025}
+    \endentry
+    \entry{wikiQubit2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bc9f93c16f56c831954017568683c774}{%
+           family={Qubits},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc9f93c16f56c831954017568683c774}
+      \strng{fullhash}{bc9f93c16f56c831954017568683c774}
+      \strng{bibnamehash}{bc9f93c16f56c831954017568683c774}
+      \strng{authorbibnamehash}{bc9f93c16f56c831954017568683c774}
+      \strng{authornamehash}{bc9f93c16f56c831954017568683c774}
+      \strng{authorfullhash}{bc9f93c16f56c831954017568683c774}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Qubit}}
+      \field{note}{[Accédé le 15-03-2025]}
+      \field{title}{Qubits – Wikipedia}
+      \field{year}{2025}
+    \endentry
     \entry{sapTrueRandomness}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=999bc6b18351bbe817d26f559ba408ae}{%
@@ -228,6 +376,29 @@
       \field{note}{[Accedé le 13-03-2025]}
       \field{title}{{T}rue randomness with {Q}uantum ( {Q}uantum {R}andom number generator ) --- community.sap.com}
       \field{year}{2023}
+    \endentry
+    \entry{wikipediaAlgorithmeShor}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=37b33cc08797f65ebce9300d4c5e01b6}{%
+           family={Shor},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{37b33cc08797f65ebce9300d4c5e01b6}
+      \strng{fullhash}{37b33cc08797f65ebce9300d4c5e01b6}
+      \strng{bibnamehash}{37b33cc08797f65ebce9300d4c5e01b6}
+      \strng{authorbibnamehash}{37b33cc08797f65ebce9300d4c5e01b6}
+      \strng{authornamehash}{37b33cc08797f65ebce9300d4c5e01b6}
+      \strng{authorfullhash}{37b33cc08797f65ebce9300d4c5e01b6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Algorithme_de_Shor}}
+      \field{note}{[Accedé le 23-03-2025]}
+      \field{title}{{A}lgorithme de {S}hor — {W}ikipédia --- fr.wikipedia.org}
+      \field{year}{2025}
     \endentry
     \entry{stackexchangeQubitState2019}{misc}{}
       \name{author}{1}{}{%
@@ -252,51 +423,28 @@
       \field{title}{How are states of a qubit measured in a quantum computer?}
       \field{year}{2019}
     \endentry
-    \entry{wikiQubit2025}{misc}{}
+    \entry{wikipediaSycamore}{misc}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ae6ede6f3dcd15cdb60c416075545227}{%
-           family={WIKI},
-           familyi={W\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=34dffbaaba6a753e65c4fdfe2b5e08c3}{%
+           family={Sycamore},
+           familyi={S\bibinitperiod}}}%
       }
-      \strng{namehash}{ae6ede6f3dcd15cdb60c416075545227}
-      \strng{fullhash}{ae6ede6f3dcd15cdb60c416075545227}
-      \strng{bibnamehash}{ae6ede6f3dcd15cdb60c416075545227}
-      \strng{authorbibnamehash}{ae6ede6f3dcd15cdb60c416075545227}
-      \strng{authornamehash}{ae6ede6f3dcd15cdb60c416075545227}
-      \strng{authorfullhash}{ae6ede6f3dcd15cdb60c416075545227}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \strng{namehash}{34dffbaaba6a753e65c4fdfe2b5e08c3}
+      \strng{fullhash}{34dffbaaba6a753e65c4fdfe2b5e08c3}
+      \strng{bibnamehash}{34dffbaaba6a753e65c4fdfe2b5e08c3}
+      \strng{authorbibnamehash}{34dffbaaba6a753e65c4fdfe2b5e08c3}
+      \strng{authornamehash}{34dffbaaba6a753e65c4fdfe2b5e08c3}
+      \strng{authorfullhash}{34dffbaaba6a753e65c4fdfe2b5e08c3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Qubit}}
-      \field{note}{[Accédé le 15-03-2025]}
-      \field{title}{Qubits – Wikipedia}
-      \field{year}{2025}
-    \endentry
-    \entry{wikipediaPorteQuantique}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=bf111e3622a72a3b5dc784b5903983ca}{%
-           family={Wiki},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{bf111e3622a72a3b5dc784b5903983ca}
-      \strng{fullhash}{bf111e3622a72a3b5dc784b5903983ca}
-      \strng{bibnamehash}{bf111e3622a72a3b5dc784b5903983ca}
-      \strng{authorbibnamehash}{bf111e3622a72a3b5dc784b5903983ca}
-      \strng{authornamehash}{bf111e3622a72a3b5dc784b5903983ca}
-      \strng{authorfullhash}{bf111e3622a72a3b5dc784b5903983ca}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Porte_quantique}}
-      \field{note}{[Accedé le 13-03-2025]}
-      \field{title}{{P}orte quantique — {W}ikipédia --- fr.wikipedia.org}
-      \field{year}{2025}
+      \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Processeur_Sycamore}}
+      \field{note}{[Accedé le 21-02-2025]}
+      \field{title}{Processeur Sycamore – Wikipedia}
+      \field{year}{2024}
     \endentry
   \enddatalist
 \endrefsection

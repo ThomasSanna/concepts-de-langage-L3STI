@@ -1,36 +1,40 @@
 \babel@toc {french}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Présentation du sujet}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Relation entre informatique quantique et physique quantique}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Informatique classique vs. Informatique quantique}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Bits classiques}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Qubits quantiques}{5}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Comparaison}{6}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Propriétés fondamentales de l'informatique quantique}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Superposition}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Mesure}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Intrication (Entanglement)}{8}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Porte quantique et calcul quantique}{8}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Porte Hadamard (H)}{8}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Porte CNOT}{9}{subsubsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.5}Interférence}{9}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Génération de Nombre aléatoire}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Problématique}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Fonctionnement}{10}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Comparaison des méthodes}{11}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Expérimentation : coder un algorithme quantique}{11}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Introduction}{11}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Les schémas de circuits quantiques}{11}{subsubsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.2}Code de l'algorithme}{13}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Prérequis}{14}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Initialisation du circuit}{14}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Exécution du circuit}{14}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Visualisation du circuit}{15}{subsubsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.3}Conclusion de l'expérimentation}{16}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Limites et perspectives}{17}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Défis actuels}{17}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Futur de l'informatique quantique}{17}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Conclusion et Q\&A}{18}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Récapitulatif des points clés}{18}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Session de questions-réponses}{18}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Bibliographie}{19}{section.8}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Présentation du sujet}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Relation entre informatique quantique et physique quantique}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Informatique classique et Informatique quantique}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Bits classiques}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Qubits quantiques}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Comparaison}{7}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Propriétés fondamentales de l'informatique quantique}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Superposition}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Mesure}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Intrication (Entanglement)}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Porte quantique et calcul quantique}{9}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Porte Hadamard (H)}{9}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Porte CNOT}{10}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Interférence}{11}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Exemple d'application : Génération de Nombre aléatoire}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Problématique}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Fonctionnement}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Comparaison des méthodes}{13}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Expérimentation : coder un algorithme quantique}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Introduction}{14}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Les schémas de circuits quantiques}{14}{subsubsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.2}Code de l'algorithme}{16}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Prérequis}{16}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Initialisation du circuit}{16}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Exécution du circuit}{17}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Visualisation du circuit}{18}{subsubsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.3}Conclusion de l'expérimentation}{19}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Limites et perspectives}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Défis actuels}{20}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Futur de l'informatique quantique}{20}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Conclusion et Q\&A}{23}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Récapitulatif des points clés}{23}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Session de questions-réponses}{23}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Annexes}{25}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Glossaire}{25}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Liens utiles}{25}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}L'utilisation de l'intelligence artificielle pour la recherche et la rédaction}{26}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Bibliographie}{27}{section.9}%

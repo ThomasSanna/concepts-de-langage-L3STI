@@ -11,6 +11,7 @@
 \usepackage{braket}
 \usepackage{float}
 \usepackage{color}
+\usepackage{tabularx}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -46,14 +47,47 @@
 \addbibresource{ref.bib}
 
 \title{Rapport de séminaire :\\L'algorithme quantique}
-\author{RAETH Léandre, SANNA Thomas\\L3 Sciences et Technologie  P. Informatique}
+\author{Léandre RAETH, Thomas SANNA\\L3 Sciences et Technologies, Parcours Informatique}
 \date{\today}
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+  \begin{center}
+      \includegraphics[width=0.5\textwidth]{img/univCorse.png}\\[1cm]
+      
+      \textsc{\LARGE Université de Corse}\\[1.5cm]
+      
+      \textsc{\Large Année universitaire 2024-2025}\\[0.5cm]
+      
+      \vfill
+      
+      \hrulefill\\[0.4cm]
+      {\Huge \bfseries Rapport de Séminaire}\\[0.4cm]
+      \hrulefill\\[1.5cm]
+      
+      \textsc{\Large L'algorithme quantique}\\[0.5cm]
+      
+      \vfill
+      
+      \textbf{Présenté par :}\\
+      Léandre RAETH, Thomas SANNA\\
+      
+      \vfill
+      
+      \textbf{Séminaire présenté le 03/04/2025}\\
+      \vfill
+      
+      \textsc{L3 Sciences et Technologies, Parcours Informatique}
+      
+  \end{center}
+\end{titlepage}
 
-\tableofcontents
+\break\begin{abstract}
+  Ce rapport de séminaire vise à vulgariser le sujet de l'algorithme quantique pour un public non-initié. Nous expliquons les concepts fondamentaux de l'informatique quantique, en mettant l'accent sur la génération de nombres aléatoires, et présentons un exemple de code utilisant le framework Qiskit. Nous discutons également des défis actuels et des perspectives futures de l'informatique quantique.
+\end{abstract}
+
+\break\tableofcontents
 
 \break\section{Introduction}
 \subsection{Présentation du sujet}
@@ -76,7 +110,7 @@ En effet, la physique quantique est une branche de la physique qui étudie les p
 
 Ainsi, l'informatique quantique est une application pratique de la physique quantique, qui permet de résoudre des problèmes complexes plus rapidement que les ordinateurs classiques. C'est pourquoi il est important de comprendre les concepts de la physique quantique pour comprendre l'informatique quantique.
 
-\break\section{Informatique classique vs. Informatique quantique}
+\break\section{Informatique classique et Informatique quantique}
 \subsection{Bits classiques}
 En informatique classique, l’unité de base est le \textbf{bit} :
 
@@ -123,7 +157,9 @@ Nous allons explorer chacun de ces principes en détails, pour le moment, commen
 \medskip
 \subsection{Comparaison}
 
-\begin{tabular}{|l|p{7cm}|}  % Ajuste la largeur de la colonne selon tes besoins
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|X|X|}
   \hline
   \textbf{Bits classiques} & \textbf{Qubits quantiques} \\
   \hline
@@ -139,7 +175,9 @@ Nous allons explorer chacun de ces principes en détails, pour le moment, commen
   \hline
   Calculs classiques, affichage, stockage de données & Résolution de problèmes complexes (cryptographie, optimisation, simulation moléculaire) \\
   \hline
-\end{tabular}
+\end{tabularx}
+\caption{Comparaison entre bits classiques et qubits quantiques}
+\end{table}
 
 
 
@@ -195,34 +233,34 @@ Les qubits sont manipulés à l’aide de \textbf{portes quantiques}.
 
 Pour rappel, en informatique classique, nous avons les portes :
 
-\begin{tabular}{|l|l|l|}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|X|X|X|}
   \hline
   \textbf{Porte NOT} & \textbf{Porte AND} & \textbf{Porte OR} \\
   \hline
   Inverse l'état du bit & 
-  \begin{tabular}{@{}l@{}} 
-      Renvoie 1 seulement \\ 
-      si les deux entrées sont 1 
-  \end{tabular} & 
-  \begin{tabular}{@{}l@{}} 
-      Renvoie 1 si au moins \\ 
-      une des entrées est 1 
-  \end{tabular} \\
+  Renvoie 1 seulement si les deux entrées sont 1 & 
+  Renvoie 1 si au moins une des entrées est 1 \\
   \hline
-\end{tabular}
-
+\end{tabularx}
+\caption{Portes logiques classiques}
+\end{table}
 
 Et autres combinaisons. Ce sont ces portes qui permettent de faire des calculs logiques, des opérations d'addition et bien d'autres dans nos ordinateurs.
 
 Il existe leurs équivalents en informatique quantique :
-
-\begin{tabular}{|l|l|}
-    \hline
-    \textbf{Porte Hadamard (H)} & \textbf{Porte CNOT} \\
-    \hline
-    Crée une superposition & Crée l’intrication entre qubits \\
-    \hline
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+  \hline
+  \textbf{Porte Hadamard (H)} & \textbf{Porte CNOT} \\
+  \hline
+  Crée une superposition & Crée l’intrication entre qubits \\
+  \hline
 \end{tabular}
+\caption{Comparaison des portes Hadamard et CNOT}
+\end{table}
 
 Détailons leur fonctionnement :
 
@@ -270,8 +308,9 @@ Les qubits sont intriqués, avec une corrélation instantanée.
 \medskip
 En bref, comme en informatique classique, on utilise ces “portes” pour manipuler les données (bits ou qubits) rentrantes et appliquer des calculs dessus. En informatique quantique, on manipule pour ensuite faire des calculs sur les probabilités.
 \medskip
+\\ \\ 
 
-\begin{tabular}{|l|l|l|}
+\begin{tabularx}{\textwidth}{|X|X|X|}
   \hline
   \textbf{} & \textbf{Porte de Hadamard} & \textbf{Porte CNOT} \\
   \hline
@@ -283,14 +322,15 @@ En bref, comme en informatique classique, on utilise ces “portes” pour manip
       Si $A = 1 \rightarrow |A\overline{B}\rangle$ 
   \end{tabular} \\
   \hline
-\end{tabular}
+\end{tabularx}
+\\ \\ 
 
 \subsection{Interférence}
 
 L'interférence quantique se produit lorsque les amplitudes de probabilité des différents états d'un système quantique se combinent. Selon la manière dont elles se combinent, les probabilités de certains résultats peuvent être amplifiées (interférence constructive) ou diminuées (interférence destructive). C’est un effet clé pour exploiter pleinement la puissance des ordinateurs quantiques, car il permet d’augmenter les chances de certains résultats tout en réduisant celles des autres.
 
 
-\break\section{Génération de Nombre aléatoire}
+\break\section{Exemple d'application : Génération de Nombre aléatoire}
 \subsection{Problématique}
 
 Lors de la génération d'un nombre aléatoire en informatique traditionnelle, par exemple, en Python avec le module `random()`, le nombre généré est en réalité dit pseudo-aléatoire car l'algorithme de Mersenne Twister repose sur une graine pour initialiser le générateur de nombres aléatoires. Cette graine permet de prédire le prochain nombre pseudo-aléatoire, ce qui constitue un problème important pour de nombreux projets confidentiels, y compris la cryptographie.
@@ -344,7 +384,7 @@ de l'algorithme de génération de nombres aléatoires en informatique quantique
   \caption{Comparaison de la génération de nombres aléatoires en utilisant un algorithme classique et quantique}
 \end{table}
 
-\section{Expérimentation : coder un algorithme quantique}
+\break\section{Expérimentation : coder un algorithme quantique}
 
 \subsection{Introduction}
 
@@ -360,6 +400,10 @@ utiliser le langage de programmation Qiskit.
 En effet, Qiskit est un framework open-source développé par IBM en 2017 pour la programmation
 d'algorithme quantique en Python \cite{wikipediaQiskitWikipedia}. Qiskit permettra d'utiliser cette fameuse 
 porte Hadamard pour préparer un qubit dans un état de superposition.
+
+Il est très important de noter que les simulateurs utilisent des algorithmes pseudo-aléatoires pour
+mesurer les résultats. En effet, on utilise un algorithme de randomisation entre 0 et 1 pour simuler
+le résultat de la mesure d'un qubit en superposition. 
 
 \subsubsection{Les schémas de circuits quantiques}
 
@@ -463,7 +507,7 @@ On mesure ensuite chaque qubit pour obtenir un résultat aléatoire entre 0 et 1
   circuit.h(q[6])
   circuit.h(q[7])
 
-  """
+  """ # simplification
   for elt_qubit in q:
       circuit.h(elt)
   """
@@ -523,12 +567,179 @@ Il n'y a pas grand chose à faire de plus si vous souhaitez essayer sur une vrai
 Les simulations quantiques offrent une alternative plus fiable pour l'instant, bien qu'un manque de scalabilité soit présent pour des circuits plus complexes, ainsi qu'un manque de réalisme quantique.
 
 \break\section{Limites et perspectives}
+
 \subsection{Défis actuels}
+
+Comme nous avons pu le voir, l’informatique quantique est une technologie prometteuse, offrant même l'espoir de voir l'humanité triompher de problèmes complexes. Mais elle reste confrontée à plusieurs défis majeurs qui ralentissent son développement et son adoption à grande échelle :  
+
+\begin{enumerate}
+  \item \textbf{Décohérence et correction d'erreurs} \\
+  L’un des problèmes les plus importants est la décohérence quantique, qui entraîne une perte rapide d’information lorsque les qubits interagissent et sont perturbés par leur environnement. Cela limite le temps de calcul utile et nécessite des techniques avancées de correction d'erreurs quantiques. Cependant, les codes correcteurs actuels nécessitent des dizaines, voire des centaines de qubits physiques (qui ne sont pas utilisés directement pour le calcul) pour stabiliser un seul qubit logique (utilisé pour le calcul). Nous verrons que de récentes avancées ont été réalisées sur ce sujet. 
+
+  \item \textbf{Scalabilité et fiabilité des qubits} \\
+  La mise à l’échelle des ordinateurs quantiques est un autre défi. Les processeurs quantiques actuels possèdent encore un nombre limité de qubits exploitables. Par exemple, IBM et Google ont construit des processeurs atteignant respectivement 1125* et 105 qubits physiques qui sont encore loin des milliers de qubits stables nécessaires pour des calculs pratiques. (*il est important de noter que la qualité des qubits (comment ils sont gérés, mesurés) est aussi, voir plus importante que leur quantité pour le moment. Tous les qubits de se valent pas !)  
+
+  \item \textbf{Puissance de calcul réelle vs promesses théoriques} \\
+  Si des algorithmes comme celui de (\cite{wikipediaAlgorithmeShor}) pour la factorisation ou de Grover pour la recherche dans une base de données sont souvent mis en avant, les gains quantiques restent difficiles à exploiter sur les machines actuelles. Les résultats restent contestés et encore loin d’une application industrielle généralisée. 
+
+  \item \textbf{Besoin en infrastructure cryogénique} \\
+  La plupart des technologies de qubits nécessitent un refroidissement à des températures proches du zéro absolu (~15 mK), ce qui augmente les coûts et rend difficile leur intégration dans des systèmes informatiques conventionnels. 
+\end{enumerate}
+
 \subsection{Futur de l'informatique quantique}
+
+Malgré ces défis, l’informatique quantique continue de progresser rapidement, avec plusieurs avancées notables qui pourraient accélérer son adoption. 
+
+\begin{enumerate}
+  \item \textbf{L’essor des qubits topologiques} \\
+  Microsoft travaille activement sur des qubits topologiques, plus résistants aux perturbations et aux erreurs. En 2025, l'entreprise a annoncé avoir réussi à présenter le Majorana 1, une puce quantique utilisant des qubits topologiques fabriqués à partir de nouveaux matériaux, les topoconducteurs. Un état de la matière qui ouvre la voie à des qubits plus stables et plus performants. Cette avancée pourrait permettre de construire des ordinateurs quantiques dotés de millions de qubits dans un avenir proche, offrant ainsi une fiabilité accrue pour des applications de calculs quantiques à grande échelle. \cite{microsoftMajorana}
+
+  \item \textbf{Hybrides quantique-classique} \\
+  Une approche prometteuse consiste à coupler des algorithmes quantiques à des processeurs classiques. Des entreprises comme NVIDIA et Amazon développent des plateformes hybrides permettant d’utiliser des circuits quantiques comme accélérateurs spécialisés pour l’optimisation et l’apprentissage automatique. 
+
+  \item \textbf{Applications concrètes en développement} \\
+  Bien que la cryptographie post-quantique soit un domaine majeur, d'autres secteurs comme la chimie (modélisation de molécules complexes), la finance (optimisation de portefeuilles), et la logistique (optimisation de trajets) commencent à expérimenter des solutions hybrides incluant du calcul quantique. 
+
+  \item \textbf{Démocratisation via le cloud} \\
+  L’accès aux ordinateurs quantiques via le cloud (IBM Quantum, Azure Quantum, AWS Braket) permet à de plus en plus de chercheurs et d'entreprises d’expérimenter et d’optimiser des algorithmes quantiques, facilitant ainsi l'émergence d'applications pratiques. 
+\end{enumerate}
+
+Si les défis rencontrés la peuvent sembler inquiétant, ces avancés permettent d'apercevoir un futur brillant pour cette discipline. Il faut aussi se rappeler que nous faisions face à des problèmes similaires aux débuts de l’informatique classique :  
+
+Les premiers ordinateurs classiques comme l'ENIAC (1945) étaient lents, énergivores et peu fiables. Leur évolution a nécessité des décennies pour atteindre des machines plus rapides et fiables, comme les premiers processeurs à transistors. 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Premiers “processeurs” classiques} & \textbf{Processeurs modernes (i9)} \\
+  \hline
+  100 kHz & 5,2 GHz (52 000x supérieur) \\
+  \hline
+\end{tabular}
+\caption{Évolution des processeurs classiques}
+\end{table}
+
+De même, l’informatique quantique aujourd'hui est limitée par des qubits fragiles, soumis à la décohérence et au bruit. Mais nous pouvons observer les mêmes avancées majeures qu’il y a 60 ans : 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+  \hline
+  \textbf{Processeurs} & \textbf{Année} & \textbf{Qubits} & \textbf{Quantique vs Classique} \\
+  \hline
+  Sycamore (Google) & 2019 & 70 & $10^4$ ans -> 200 secondes \\
+  Willow (Google) & 2024 & 105 & $10^{25}$ ans -> 5 min \\
+  \hline
+\end{tabular}
+\caption{Évolution des processeurs quantiques}
+\end{table}
+
+\cite{googleWillow} \cite{wikipediaSycamore} \cite{wikipediaQProcessors}
 
 \break\section{Conclusion et Q\&A}
 \subsection{Récapitulatif des points clés}
+\begin{itemize}
+  \item L'informatique quantique utilise les principes de la mécanique quantique pour effectuer des calculs.
+  \item Les qubits sont la base de l'informatique quantique, permettant la superposition et l'intrication.
+  \item Les portes quantiques manipulent les qubits pour effectuer des opérations logiques.
+  \item La mesure d'un qubit en superposition donne un résultat aléatoire, permettant la génération de nombres aléatoires.
+  \item L'informatique quantique est confrontée à des défis majeurs, mais des avancées prometteuses sont en cours.
+  \item L'informatique quantique a le potentiel de révolutionner des domaines tels que la cryptographie, l'optimisation et la simulation de systèmes quantiques.
+  \item Des entreprises comme IBM, Google et Microsoft investissent massivement dans la recherche et le développement de l'informatique quantique.
+\end{itemize}
+
 \subsection{Session de questions-réponses}
+
+\begin{itemize}
+  \item \textbf{Q1: Quelle est la différence entre un ordinateur quantique et un simulateur quantique?}
+  \item Réponse: Un ordinateur quantique utilise des qubits physiques pour effectuer des calculs basés sur la mécanique quantique, tandis qu'un simulateur quantique utilise un ordinateur classique pour imiter le comportement d'un ordinateur quantique. Les simulateurs sont utiles pour le développement et le test d'algorithmes quantiques, mais ils ne peuvent pas reproduire pleinement les avantages de la véritable computation quantique.
+
+  \item \textbf{Q2: Quels sont les principaux langages de programmation utilisés pour développer des algorithmes quantiques?}
+  \item Réponse: Les principaux langages de programmation pour les algorithmes quantiques incluent Qiskit (Python) développé par IBM, Cirq (Python) développé par Google, et Q\# développé par Microsoft.
+
+  \item \textbf{Q3: Comment les ordinateurs quantiques peuvent-ils améliorer la cryptographie?}
+  \item Réponse: Les ordinateurs quantiques peuvent briser les systèmes de cryptographie actuels basés sur la factorisation de grands nombres (comme RSA) en utilisant des algorithmes comme celui de Shor (\cite{wikipediaAlgorithmeShor}). Ils peuvent également renforcer la cryptographie en permettant la création de clés de chiffrement véritablement aléatoires et en facilitant la mise en œuvre de la cryptographie quantique.
+
+  \item \textbf{Q4: Quels sont les défis liés à la correction d'erreurs dans les ordinateurs quantiques?}
+  \item Réponse: La correction d'erreurs quantiques est un défi majeur en raison de la sensibilité des qubits à leur environnement, ce qui peut entraîner des erreurs de décohérence et de bruit. Les codes de correction d'erreurs quantiques nécessitent un grand nombre de qubits physiques pour protéger un seul qubit logique.
+
+  \item \textbf{Q5: Comment les ordinateurs quantiques peuvent-ils être utilisés dans l'optimisation?}
+  \item Réponse: Les ordinateurs quantiques peuvent résoudre des problèmes d'optimisation complexes plus efficacement que les ordinateurs classiques en utilisant des algorithmes quantiques comme l'algorithme de Grover (\cite{wikipediaAlgorithmeGrover}). Par exemple, pour trouver un élément dans une liste de $n$ éléments, un algorithme classique a une complexité de $O(n)$, tandis qu'un algorithme quantique a une complexité de $O(\sqrt{n})$, ce qui est beaucoup plus rapide.
+  
+  \item \textbf{Q6: Quels sont les principaux obstacles à l'adoption généralisée des ordinateurs quantiques?}
+  \item Réponse: Les principaux obstacles incluent la décohérence, le bruit des qubits, la mise à l'échelle des systèmes, le besoin en infrastructure cryogénique, et le développement de logiciels et d'algorithmes adaptés. De plus, il est nécessaire de former des experts en informatique quantique.
+  
+  \item \textbf{Q7: Qu'avez-vous appris de cette présentation?}
+  \item Réponse: Nous nous intéressions déjà pas mal à l'informatique quantique, mais cela nous a permis de mieux comprendre les concepts de base suivant les mathématiques et la physique quantique. Coder un algorithme quantique était une première pour nous.
+  
+  \item \textbf{Q8: Que pensez-vous de l'informatique quantique?}
+  \item Réponse: Ce sujet nous fait comprendre assez rapidement que nous vivons encore aux touts débuts de l'informatique quantique et qu'il nécessite encore beaucoup de recherche et de développement pour exploiter pleinement son potentiel. Cependant, nous sommes très enthousiastes à l'idée de voir comment cette technologie va évoluer dans les années à venir et comment elle pourrait transformer notre façon de traiter l'information.
+\end{itemize}
+
+\break\section{Annexes}
+\subsection{Glossaire}
+\begin{itemize}
+  \item \textbf{Algorithme de Grover} : Algorithme quantique pour la recherche dans une base de données non structurée. (\cite{wikipediaAlgorithmeGrover})
+  \item \textbf{Algorithme de Shor} : Algorithme quantique pour la factorisation de grands nombres, qui menace la cryptographie classique. (\cite{wikipediaAlgorithmeShor})
+  \item \textbf{Cirq} : Framework open-source développé par Google pour la programmation d'algorithmes quantiques.
+  \item \textbf{Correction d'erreurs quantiques} : Techniques utilisées pour protéger les qubits contre les erreurs causées par la décohérence et le bruit.
+  \item \textbf{Décohérence} : Perte d'information quantique due à l'interaction avec l'environnement.
+  \item \textbf{IBM Quantum Experience} : Plateforme cloud d'IBM permettant d'accéder à des ordinateurs quantiques.
+  \item \textbf{Intrication} : Propriété quantique où deux qubits sont liés de telle manière que l'état de l'un dépend de l'état de l'autre.
+  \item \textbf{Mesure} : Processus d'obtention d'un résultat classique à partir d'un qubit en superposition.
+  \item \textbf{Porte quantique} : Opération qui agit sur un ou plusieurs qubits pour effectuer des calculs.
+  \item \textbf{Q\#} : Langage de programmation quantique développé par Microsoft.
+  \item \textbf{QASM} : Quantum Assembly Language, un langage de bas niveau pour représenter des circuits quantiques.
+  \item \textbf{Qiskit} : Framework open-source pour la programmation d'algorithmes quantiques en Python.
+  \item \textbf{Qubit} : Unité de base de l'information quantique, analogue au bit classique.
+  \item \textbf{Superposition} : État dans lequel un qubit peut représenter simultanément plusieurs valeurs.
+  \item \textbf{Topoconducteurs} : Matériaux utilisés pour fabriquer des qubits topologiques, offrant une meilleure stabilité et performance.
+\end{itemize}
+
+\subsection{Liens utiles}
+\begin{itemize}
+  \item \textbf{Cirq} : \url{https://quantumai.google/cirq}
+  \item \textbf{Google Quantum AI} : \url{https://quantumai.google/}
+  \item \textbf{IBM Quantum Experience} : \url{https://quantum-computing.ibm.com/}
+  \item \textbf{Microsoft Quantum Development Kit} : \url{https://azure.microsoft.com/en-us/services/quantum-development-kit/}
+  \item \textbf{Q\#} : \url{https://docs.microsoft.com/en-us/quantum/}
+  \item \textbf{QASM} : \url{https://www.quantum-inspire.com/kbase/cqasm/}
+  \item \textbf{Qiskit} : \url{https://qiskit.org/}
+  \item \textbf{Stack Exchange} : \url{https://quantumcomputing.stackexchange.com/}
+  \item \textbf{Wikipedia} : \url{https://fr.wikipedia.org/wiki/Informatique_quantique}
+\end{itemize}
+
+\subsection{L'utilisation de l'intelligence artificielle pour la recherche et la rédaction}
+
+L'intelligence artificielle peut se sembler extrêmement utile pour obtenir des informations assez précises sur certains domaines de ce sujet.
+
+Nous avons en effet utiliser l'intelligence artificielle pour, par exemple, avoir la confirmation du fait qu'un un simulateur quantique utilisait bien un algorithme pseudo-aléatoire pour simuler la mesure d'un qubit.
+
+Voici quelques une des questions posées à l'IA :
+
+\begin{itemize}
+  \item \textit{Comment un simulateur quantique arrive à creer des qubits/porte d'Hadamarde ?}
+  \item \textit{Dans cet exemple (expliqué plus tôt par l'IA), comment mesure-t-on ce qubit ?}
+  \item \textit{Si l'on fixe une seed, et que l'on a trois qubits initialisés à 0 et un initialisé à 1. Est-ce qu'apres la porte d'Hadamarde, le bit initialisé à 1 sera forcément different de ceux à 0 suite à la mesure ? (toujours dans un cadre de simulation) }
+  \item \textit{À quel point l'enjeu d'avoir un ordinateur quantique est important dans la création d'un nombre purement aléatoire ? Recherche, si jamais, des interview, etc... }
+  \item \textit{Existe-t-il d'autres domaines qui nécessitent d'autant plus les ordinateurs quantique ?}
+\end{itemize}
+
+La recherche par image a aussi été utilisée pour obtenir une description et explication plus détaillée sur les circuits quantiques
+
+\medskip
+
+Sur le contenu de ce rapport, l'IA a pu juger de la pertinence de certaines phrases, et de la formulation de celles-ci. Nous doutions aussi du fait que nous parlions un peu trop de la physique quantique et pas assez de l'algorithme quantique, l'IA a pu nous suggérer des changements de contenus pour rééquilibrer le rapport.
+
+\medskip
+
+Nous avons aussi pu utiliser l'IA pour rallonger certains paragraphes, en lui demandant de reformuler certaines phrases, ou de les développer.
+
+L'IA a permis de corriger certaines fautes d'orthographes, de certains problèmes de compilation en Latex, et de nous aider à écrire certaines équations.
+
+L'aide à la mise en page a aussi été très utile, en nous suggérant de mettre certaines parties en gras, ou d'ajouter des titres pour mieux structurer le rapport.
+
 
 \break\section{Bibliographie}
 \printbibliography
