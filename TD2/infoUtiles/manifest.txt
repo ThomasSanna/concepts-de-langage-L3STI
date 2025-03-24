@@ -1,0 +1,14 @@
+Bonnes Pratiques de codage en C 
+===============================
+1. Une bonne indentation du code
+2. Des variables et fonctions nommées de manière explicite
+3. Commentaires au dessus de la page pour expliquer le but du programme, l'auteur, la date de création, etc.
+4. Commentaires au dessus des fonctions pour expliquer leur but, les paramètres qu'elles prennent, leur valeur de retour, etc.
+5. Commentaires nécessaires pour expliquer les parties du code qui ne sont pas évidentes
+6. Caractères spéciaux à éviter dans les noms de variables, fonctions, etc.
+7. Utilisation de constantes pour les valeurs qui ne changeront paramètres
+8. Nom des constantes en majuscules
+9. Utilisation de fonctions pour éviter la répétition de code
+10. Nom des variables et fonctions en anglais
+11. Nom des variables et fonctions en camelCase
+12. Utilisation de types de données appropriés (pas de int pour stocker un booléen) 
