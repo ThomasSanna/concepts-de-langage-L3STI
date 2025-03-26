@@ -1,7 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+// La fonction swap_int échange les valeurs de deux variables génériques en utilisant des pointeurs void*.
+// Paramètres :
+// - p1 : pointeur vers la première variable.
+// - p2 : pointeur vers la deuxième variable.
+// - size : taille en octets des variables à échanger (par exemple, sizeof(int) pour des entiers).
+// Fonctionnement :
 void swap_int(void* p1, void* p2, int size ) {
+
   void* ptemp = malloc(size);
 
   *ptemp = *p1;

@@ -38,7 +38,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://qiskit.github.io/qiskit-aer/getting_started.html}}
-      \field{note}{[Accedé le 13-03-2025]}
+      \field{note}{[Accedé le 13-03-2025 par Sanna Thomas]}
       \field{title}{{G}etting started - {Q}iskit {A}er 0.16.1 --- qiskit.github.io}
       \field{year}{2025}
     \endentry
@@ -64,7 +64,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://news.microsoft.com/source/features/innovation/microsofts-majorana-1-chip-carves-new-path-for-quantum-computing/}}
-      \field{note}{[Accedé le 21-02-2025]}
+      \field{note}{[Accedé le 21-02-2025 par Raeth Leandre]}
       \field{title}{Microsoft’s Majorana 1 chip carves new path for quantum computing}
       \field{year}{2025}
     \endentry
@@ -87,7 +87,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://quantumcomputing.stackexchange.com/questions/24072/what-are-the-differences-between-qiskits-aersimulator-qasmsimulator-and-statev}}
-      \field{note}{[Accedé le 14-03-2025]}
+      \field{note}{[Accedé le 14-03-2025 par Sanna Thomas]}
       \field{title}{{W}hat are the differences between {Q}iskit's {A}er{S}imulator, {Q}asm{S}imulator and {S}tatevector{S}imulator? --- quantumcomputing.stackexchange.com}
       \field{year}{2022}
     \endentry
@@ -110,7 +110,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{}}
-      \field{note}{[Accédé le 16-03-2025]}
+      \field{note}{[Accédé le 16-03-2025 par Sanna Thomas]}
       \field{title}{Formation Corte/MesoNet - Damien Nicolazic}
       \field{year}{2024}
     \endentry
@@ -133,7 +133,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Algorithme_de_Grover}}
-      \field{note}{[Accedé le 13-02-2025]}
+      \field{note}{[Accedé le 13-02-2025 par Sanna Thomas]}
       \field{title}{{A}lgorithme de {G}rover — {W}ikipédia --- fr.wikipedia.org}
       \field{year}{2025}
     \endentry
@@ -156,7 +156,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.ibm.com/fr-fr/topics/quantum-computing}}
-      \field{note}{[Accédé le 15-03-2025]}
+      \field{note}{[Accédé le 15-03-2025 par Sanna Thomas]}
       \field{title}{Qu’est-ce que l’informatique quantique}
       \field{year}{2024}
     \endentry
@@ -179,7 +179,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://en.wikipedia.org/wiki/IBM_Quantum_Platform}}
-      \field{note}{[Accedé le 13-03-2025]}
+      \field{note}{[Accedé le 13-03-2025 par Sanna Thomas]}
       \field{title}{{I}{B}{M} {Q}uantum {P}latform - {W}ikipedia --- en.wikipedia.org}
       \field{year}{2025}
     \endentry
@@ -204,7 +204,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://quantum.microsoft.com/en-us/insights/education/concepts/entanglement}}
-      \field{note}{[Accédé le 17-03-2025]}
+      \field{note}{[Accédé le 17-03-2025 par Raeth Leandre]}
       \field{title}{Entanglement}
       \field{year}{2025}
     \endentry
@@ -229,7 +229,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://learn.microsoft.com/fr-fr/azure/quantum/concepts-the-qubit}}
-      \field{note}{[Accédé le 16-03-2025]}
+      \field{note}{[Accédé le 16-03-2025 par Sanna Thomas]}
       \field{title}{Le qubit en informatique quantique}
       \field{year}{2025}
     \endentry
@@ -255,7 +255,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://blog.google/technology/research/google-willow-quantum-chip/}}
-      \field{note}{[Accedé le 21-03-2025]}
+      \field{note}{[Accedé le 21-03-2025 par Raeth Leandre]}
       \field{title}{Meet Willow, our state-of-the-art quantum chip}
       \field{year}{2024}
     \endentry
@@ -278,7 +278,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Porte_quantique}}
-      \field{note}{[Accedé le 13-03-2025]}
+      \field{note}{[Accedé le 13-03-2025 par Sanna Thomas]}
       \field{title}{{P}orte quantique — {W}ikipédia --- fr.wikipedia.org}
       \field{year}{2025}
     \endentry
@@ -304,7 +304,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://en.wikipedia.org/wiki/Qiskit}}
-      \field{note}{[Accedé le 13-03-2025]}
+      \field{note}{[Accedé le 13-03-2025 par Sanna Thomas]}
       \field{title}{{Q}iskit - {W}ikipedia --- en.wikipedia.org}
       \field{year}{2025}
     \endentry
@@ -327,7 +327,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://en.wikipedia.org/wiki/List_of_quantum_processors}}
-      \field{note}{[Accedé le 21-02-2025]}
+      \field{note}{[Accedé le 21-02-2025 par Raeth Leandre]}
       \field{title}{List of quantum processors – Wikipedia}
       \field{year}{2025}
     \endentry
@@ -350,7 +350,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Qubit}}
-      \field{note}{[Accédé le 15-03-2025]}
+      \field{note}{[Accédé le 15-03-2025 par Sanna Thomas]}
       \field{title}{Qubits – Wikipedia}
       \field{year}{2025}
     \endentry
@@ -373,7 +373,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://community.sap.com/t5/additional-blogs-by-sap/true-randomness-with-quantum-quantum-random-number-generator/ba-p/13549945}}
-      \field{note}{[Accedé le 13-03-2025]}
+      \field{note}{[Accedé le 13-03-2025 par Sanna Thomas]}
       \field{title}{{T}rue randomness with {Q}uantum ( {Q}uantum {R}andom number generator ) --- community.sap.com}
       \field{year}{2023}
     \endentry
@@ -396,7 +396,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Algorithme_de_Shor}}
-      \field{note}{[Accedé le 23-03-2025]}
+      \field{note}{[Accedé le 23-03-2025 par Sanna Thomas]}
       \field{title}{{A}lgorithme de {S}hor — {W}ikipédia --- fr.wikipedia.org}
       \field{year}{2025}
     \endentry
@@ -419,7 +419,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://quantumcomputing.stackexchange.com/questions/9358/how-are-states-of-a-qubit-measured-in-a-quantum-computer}}
-      \field{note}{[Accédé le 16-03-2025]}
+      \field{note}{[Accédé le 16-03-2025 par Raeth Leandre]}
       \field{title}{How are states of a qubit measured in a quantum computer?}
       \field{year}{2019}
     \endentry
@@ -442,7 +442,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://fr.wikipedia.org/wiki/Processeur_Sycamore}}
-      \field{note}{[Accedé le 21-02-2025]}
+      \field{note}{[Accedé le 21-02-2025 par Raeth Leandre]}
       \field{title}{Processeur Sycamore – Wikipedia}
       \field{year}{2024}
     \endentry

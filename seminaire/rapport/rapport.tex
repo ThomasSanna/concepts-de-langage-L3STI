@@ -650,27 +650,40 @@ Beaucoup de scientifiques et d'ingénieurs ont, à l'heure actuelle, besoin de s
 \begin{itemize}
   \item \textbf{Q1: Quelle est la différence entre un ordinateur quantique et un simulateur quantique?}
   \item Réponse: Un ordinateur quantique utilise des qubits physiques pour effectuer des calculs basés sur la mécanique quantique, tandis qu'un simulateur quantique utilise un ordinateur classique pour imiter le comportement d'un ordinateur quantique. Les simulateurs sont utiles pour le développement et le test d'algorithmes quantiques, mais ils ne peuvent pas reproduire pleinement les avantages de la véritable computation quantique.
-
+\\
   \item \textbf{Q2: Quels sont les principaux langages de programmation utilisés pour développer des algorithmes quantiques?}
   \item Réponse: Les principaux langages de programmation pour les algorithmes quantiques incluent Qiskit (Python) développé par IBM, Cirq (Python) développé par Google, et Q\# développé par Microsoft.
-
+\\
   \item \textbf{Q3: Comment les ordinateurs quantiques peuvent-ils améliorer la cryptographie?}
   \item Réponse: Les ordinateurs quantiques peuvent briser les systèmes de cryptographie actuels basés sur la factorisation de grands nombres (comme RSA) en utilisant des algorithmes comme celui de Shor (\cite{wikipediaAlgorithmeShor}). Ils peuvent également renforcer la cryptographie en permettant la création de clés de chiffrement véritablement aléatoires et en facilitant la mise en œuvre de la cryptographie quantique.
-
+\\
   \item \textbf{Q4: Quels sont les défis liés à la correction d'erreurs dans les ordinateurs quantiques?}
   \item Réponse: La correction d'erreurs quantiques est un défi majeur en raison de la sensibilité des qubits à leur environnement, ce qui peut entraîner des erreurs de décohérence et de bruit. Les codes de correction d'erreurs quantiques nécessitent un grand nombre de qubits physiques pour protéger un seul qubit logique.
-
+\\
   \item \textbf{Q5: Comment les ordinateurs quantiques peuvent-ils être utilisés dans l'optimisation?}
   \item Réponse: Les ordinateurs quantiques peuvent résoudre des problèmes d'optimisation complexes plus efficacement que les ordinateurs classiques en utilisant des algorithmes quantiques comme l'algorithme de Grover (\cite{wikipediaAlgorithmeGrover}). Par exemple, pour trouver un élément dans une liste de $n$ éléments, un algorithme classique a une complexité de $O(n)$, tandis qu'un algorithme quantique a une complexité de $O(\sqrt{n})$, ce qui est beaucoup plus rapide.
-  
+\\
   \item \textbf{Q6: Quels sont les principaux obstacles à l'adoption généralisée des ordinateurs quantiques?}
   \item Réponse: Les principaux obstacles incluent la décohérence, le bruit des qubits, la mise à l'échelle des systèmes, le besoin en infrastructure cryogénique, et le développement de logiciels et d'algorithmes adaptés. De plus, il est nécessaire de former des experts en informatique quantique.
-  
+\\  
   \item \textbf{Q7: Qu'avez-vous appris de cette présentation?}
   \item Réponse: Nous nous intéressions déjà pas mal à l'informatique quantique, mais cela nous a permis de mieux comprendre les concepts de base suivant les mathématiques et la physique quantique. Coder un algorithme quantique était une première pour nous.
-  
+\\  
   \item \textbf{Q8: Que pensez-vous de l'informatique quantique?}
   \item Réponse: Ce sujet nous fait comprendre assez rapidement que nous vivons encore aux touts débuts de l'informatique quantique et qu'il nécessite encore beaucoup de recherche et de développement pour exploiter pleinement son potentiel. Cependant, nous sommes très enthousiastes à l'idée de voir comment cette technologie va évoluer dans les années à venir et comment elle pourrait transformer notre façon de traiter l'information.
+\\  
+  \item \textbf{Q9: Qu'est ce qui vous a le plus interessé dans l'algorithme quantique ?}
+  \item Réponse: Pour des novices comme nous, les propriétés quantiques, nous voyions cela comme de la magie en quelque sorte. Il nous semblait alors impératif de découvrir l'algorithmie sous cette forme, puisque nous la voyions déjà de façon classique avec des langages de programmation existants. Travailler dans un sujet en même temps proche que très différent de l'algorithme classique, nous a extrèmement interessé, puisque nous étions assez étonné de certains algorithmes irréalistes pour un non-initié.
+\\
+  \item \textbf{Q10: Comment a été réparti le travail ?}
+  \item Réponse: RAETH Léandre a tenu à expliquer les propriétés fondamentales de l'informatique quantique de façon claire et compréhensible. Il a aussi introduit une comparaison détaillée entre l'informatique classique et l'informatique quantique, puis a expliqué les Limites et perspectives des algorithmes quantiques, notamment les grands défis mondiaux sur ce sujet, et une vision globale et objective de celui-ci.
+  \item SANNA Thomas a effectué une introduction au sujet, puis a pu expliqué de manière détaillée un exemple d'application pensé simple pour des initiés : la génération de nombre aléatoire en algorithme quantique, avec une brève comparaison entre l'algorithme classique et l'algorithme quantique, puis une introduction aux schémas d'algorithmes quantiques, ainsi que l'expérimentation de cet algorithme en Python sur le framework Qiskit, tout en expliquant les points clés de cette démarche. Il a terminé avec la Conclusion et la mise en place de Questions/Réponses, et de l'Annexe.
+\\
+  \item \textbf{Q11: Qu'avez-vous modifié à la suite de votre plan d'ébauche ?}
+  \item Réponse: Au départ, nous souhaitions parler de l'algorithme de Grover, qui est un algorithme quantique qui permet de rechercher un élément spécifique dans une liste de $n$ éléments, non triée, avec une complexité de $O(\sqrt{n})$ (\cite{wikipediaAlgorithmeGrover}), contrairement à un algorithme classique qui est de complexité $O(n)$. Cependant, cet algorithme est assez complexe à expliquer dans un séminaire pour non-initiés, puisqu'il utilise aussi l'interférence quantique pour amplifier la probabilité de trouver l'élément recherché. C'est pour cela que nous avons opté pour l'algorithme de génération de nombre aléatoire qui utilise seulement la superposition quantique et qui explique assez bien des enjeux spécifiques de l'algorithme quantique.
+  \item Nous avons aussi fait extrèmement attention à bien expliquer un sujet avant de le traiter, notamment avec l'ajout d'une explication de ce qu'est Qiskit. Dans le pire des cas, nous avons eu l'idée de créer une Annexe dans lequel on pouvait retrouver le Glossaire des termes clés du rapport, ainsi qu'une partie "Liens utiles" pour retrouver les sites qui expliquent bien plus en détails certains termes du Glossaire.
+  \item La partie question réponse nous semblait aussi une excellente idée pour expliquer nos questionnements, et l'avancement du séminaire.
+
 \end{itemize}
 
 \break\section{Annexes}
@@ -698,12 +711,12 @@ Beaucoup de scientifiques et d'ingénieurs ont, à l'heure actuelle, besoin de s
   \item \textbf{Cirq} : \url{https://quantumai.google/cirq}
   \item \textbf{Google Quantum AI} : \url{https://quantumai.google/}
   \item \textbf{IBM Quantum Experience} : \url{https://quantum-computing.ibm.com/}
+  \item \textbf{Informatique quantique} : \url{https://fr.wikipedia.org/wiki/Informatique_quantique}
   \item \textbf{Microsoft Quantum Development Kit} : \url{https://azure.microsoft.com/en-us/services/quantum-development-kit/}
   \item \textbf{Q\#} : \url{https://docs.microsoft.com/en-us/quantum/}
   \item \textbf{QASM} : \url{https://www.quantum-inspire.com/kbase/cqasm/}
   \item \textbf{Qiskit} : \url{https://qiskit.org/}
   \item \textbf{Stack Exchange} : \url{https://quantumcomputing.stackexchange.com/}
-  \item \textbf{Wikipedia} : \url{https://fr.wikipedia.org/wiki/Informatique_quantique}
 \end{itemize}
 
 \subsection{L'utilisation de l'intelligence artificielle pour la recherche et la rédaction}
@@ -735,6 +748,12 @@ Nous avons aussi pu utiliser l'IA pour rallonger certains paragraphes, en lui de
 L'IA a permis de corriger certaines fautes d'orthographes, de certains problèmes de compilation en Latex, et de nous aider à écrire certaines équations.
 
 L'aide à la mise en page a aussi été très utile, en nous suggérant de mettre certaines parties en gras, ou d'ajouter des titres pour mieux structurer le rapport.
+
+IA utilisées:
+\begin{itemize}
+  \item GPT4 (notamment utilisé par GitHub Copilot)
+  \item Grok 3 (Beta)
+\end{itemize}
 
 
 \break\section{Bibliographie}

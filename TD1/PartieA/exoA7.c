@@ -5,9 +5,10 @@ void convertir_en_romain(int nombre) {
     char *symboles[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
     
     for (int i = 0; i < 13; i++) {
-        while (nombre >= valeurs[i]) {
+        int count = nombre / valeurs[i];
+        nombre %= valeurs[i];
+        for (int j = 0; j < count; j++) {
             printf("%s", symboles[i]);
-            nombre -= valeurs[i];
         }
     }
     printf("\n");

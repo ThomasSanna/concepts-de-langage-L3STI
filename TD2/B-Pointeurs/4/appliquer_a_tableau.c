@@ -30,7 +30,7 @@ Output :
   - void : la fonction ne retourne rien, elle modifie le tableau en place
 */
 void appliquerATableauPurPointeurs(int f(int), int* t, int n){
-    int* end = t + n;
+    int* end = t + n; // ie l'adresse du dernier element de t
     for (int* p = t; p < end; p++) {
         *p = f(*p);
     }

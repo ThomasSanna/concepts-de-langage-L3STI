@@ -15,9 +15,6 @@ Structures de données utilisées :
 - Horaire : pour stocker les informations d'un horaire de train (ville de départ, ville d'arrivée, heure de départ, heure d'arrivée, distance).
 - ListeHoraires : pour stocker un tableau dynamique d'horaires de train, ainsi que la taille actuelle et la capacité du tableau.
 Fonctions principales :
-- initialiserListe : pour initialiser la liste d'horaires avec une capacité initiale.
-- ajouterHoraire : pour ajouter un horaire à la liste, en redimensionnant le tableau si nécessaire.
-- afficherHoraires : pour afficher tous les horaires de la liste.
 */
 
 /*
@@ -200,6 +197,7 @@ void afficherTrajetPlusRapide(ListeHoraires *liste) {
     for(int i=0; i<liste->taille; i++){
 
         // Conversion des heures de départ et d'arrivée en entiers
+        // ... - '0' renvoie la différence entre Le chiffre et 0 en ascii. On obtient donc un entier qui est le chiffre de l'heure
         int heureDepart = (liste->horaires[i].heure_depart[0] - '0') * 10 + (liste->horaires[i].heure_depart[1] - '0');
         int minuteDepart = (liste->horaires[i].heure_depart[3] - '0') * 10 + (liste->horaires[i].heure_depart[4] - '0');
         int heureArrivee = (liste->horaires[i].heure_arrivee[0] - '0') * 10 + (liste->horaires[i].heure_arrivee[1] - '0');
